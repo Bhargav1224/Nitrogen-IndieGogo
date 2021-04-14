@@ -1,0 +1,131 @@
+/* Slideshow css */
+
+.centerbox {
+	/* border: 1px solid red; */
+	display: flex;
+}
+
+.maincontainer {
+	border: 1px solid grey;
+	height: 650px;
+	width: 500px;
+	margin: 10px;
+	cursor: pointer;
+}
+.maincontainer:hover {
+	transform: scale(1.01);
+	box-shadow: 5px 5px 5px grey;
+}
+.imghoverzoom {
+	/* border: 1px solid blue; */
+	margin: auto;
+	width: 100%;
+	height: 50%;
+}
+.imagewidth {
+	width: 100%;
+	height: 100%;
+}
+.titlehover {
+	color: grey;
+	margin-left: 10px;
+}
+.titlehover:hover {
+	color: red;
+}
+.description,
+.subheading {
+	text-align: center;
+	color: gray;
+}
+.subheading {
+	color: black;
+}
+.shares {
+	margin: auto;
+}
+.shares > .progresssymbol {
+	border: 0px solid;
+	cursor: pointer;
+	height: 10px;
+	position: relative;
+	width: 97%;
+	background-color: rgb(125, 223, 101);
+	border-radius: 50px;
+}
+.changecontent {
+	border: none;
+	outline: none;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	width: 40px;
+	margin: 6px;
+	height: 40px;
+	border-radius: 50%;
+}
+.changecontent:hover {
+	background-color: black;
+	color: white;
+}
+
+/* collectionPage ----css */
+
+/* //background-image:
+//url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1618336553/dx7ssf5krfnevw6q8eij.jpg")
+//url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1618332231/kf6uqtwoyhrzyuadrjjd.jpg")
+//url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1610645828/srw2ffyyagzenfu6pznr.png")
+//url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1597692648/t5nvsqhmxvwgk8cgrtac.png")
+//url("https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/crowdfunding-bg-mobile-lg.jpg") */
+
+.collectionbox {
+	cursor: pointer;
+	/* border: 1px solid grey; */
+	width: 46%;
+	height: 450px;
+	margin: 20px;
+	margin-top: 30px;
+	margin-left: 7px;
+	float: left;
+    
+}
+.collectionbox > img {
+	height: 90%;
+	width: 100%;
+}
+.imagetitle {
+	margin-top: -250px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+.collectiontitle {
+	text-align: left;
+	margin-top: 210px;
+	clear: both;
+	margin-left: 10px;
+	color: rgb(46, 42, 42);
+}
+.collectionlinks {
+	text-align: right;
+	margin-left: 260px;
+	margin-top: -45px;
+}
+.collectionlinks > p {
+	color: rgb(58, 88, 6);
+}
+.collectionlinks > p:hover {
+	color: red;
+}
+
+.crowdfunding{
+    width: 95%;
+   margin-left: 7px;
+    height: 500px;
+    /* border: 1px solid grey; */
+    clear: both;
+}
+.crowdfunding>img{
+    width: 100%;
+    height: 100%;
+}
