@@ -1,6 +1,7 @@
 import React from "react";
+import { CrowdFunding } from "./CrowdFunding";
 import styles from "./SlideShow.module.css";
-import { Link } from "react-router-dom";
+
 export const CollectionPage = () => {
 	return (
 		<>
@@ -59,12 +60,8 @@ export const CollectionPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className={styles.crowdfunding}>
-				<img
-					src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/crowdfunding-bg-mobile-lg.jpg"
-					alt="crowdfunding image"
-				/>
-			</div>
+			<CrowdFunding/>
+			
 		</>
 	);
 };
