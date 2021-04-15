@@ -22,6 +22,7 @@ export const Routes = () => {
         <Route path="/login">
           <AuthPage />
         </Route>
+  
       </Switch>
     </>
   );
