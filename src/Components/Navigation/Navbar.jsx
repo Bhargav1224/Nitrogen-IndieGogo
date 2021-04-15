@@ -4,14 +4,29 @@ import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "./Dropdown";
+import { useSelector, useDispatch } from "react-redux";
+import { logoutSuccess } from "../../Redux/auth/authAction";
+import { fire } from "../Firebase/fire";
 
 export const Navbar = () => {
   const [drop, setDrop] = useState(true);
   const [page, setPage] = useState(false);
+  const dispatch = useDispatch();
   const handledrop = () => {
     setDrop(!drop);
     setPage(!page);
   };
+  const handleLogout = () => {
+    fire.auth().signOut();
+    let payload = {
+      user: false,
+      userName: "",
+    };
+    dispatch(logoutSuccess(payload));
+  };
+
+  const { isAuth, userName } = useSelector((state) => state.auth);
+  console.log(isAuth, userName);
   return (
     <div className={styles.nav1}>
       <nav className={styles.nav}>
@@ -34,12 +49,25 @@ export const Navbar = () => {
           <NavLink to="/start-a-campaign" className={styles.navitemright1}>
             Start a campaign
           </NavLink>
-          <NavLink to="/login" className={styles.navitemright}>
-            Log in
-          </NavLink>
-          <NavLink to="/login" className={styles.navitemright}>
-            Sign Up
-          </NavLink>
+          {isAuth ? (
+            <>
+              <NavLink to="#" className={styles.navitemright}>
+                {userName}
+              </NavLink>
+              <NavLink to="#" onClick={() => handleLogout()} className={styles.navitemright}>
+                logout
+              </NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink to="/login" className={styles.navitemright}>
+                Log in
+              </NavLink>
+              <NavLink to="/login" className={styles.navitemright}>
+                Sign Up
+              </NavLink>
+            </>
+          )}
         </div>
       </nav>
       {page ? null : <Dropdown />}
