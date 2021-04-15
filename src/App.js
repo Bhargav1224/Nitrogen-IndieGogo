@@ -1,11 +1,10 @@
 
 import './App.css';
-import { SlideShow } from './Components/HomeSlideShow/SlideShow';
-
+import { Routee } from './Routes/Routee';
 function App() {
   return (
     <div className="App">
-      <SlideShow/>
+      <Routee/>
     </div>
   );
 }
