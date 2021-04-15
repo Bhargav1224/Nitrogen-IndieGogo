@@ -20,9 +20,13 @@ export const AuthPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    fire.auth().signInWithEmailAndPassword(email, password);
+    fire
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch((err) => {
+        alert(err.code);
+      });
     authListener();
-    console.log(user);
   };
 
   const handleSignUp = (e) => {
@@ -32,6 +36,9 @@ export const AuthPage = () => {
       .createUserWithEmailAndPassword(signUpEmail, signUpPassword)
       .then((user) => {
         fire.database().ref(`users/${user.uid}`).set({ displayName: "stark" });
+      })
+      .catch((err) => {
+        alert(err.code);
       });
     authListener();
   };
@@ -65,6 +72,7 @@ export const AuthPage = () => {
   useEffect(() => {
     authListener();
   }, []);
+  console.log(user);
   return (
     <>
       {user ? (
