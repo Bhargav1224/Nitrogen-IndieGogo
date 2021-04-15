@@ -1,9 +1,9 @@
-import './App.css';
-import { Routee } from './Routes/Routee';
+import "./App.css";
+import { Routes } from "./Routes/Routes";
 function App() {
   return (
     <div className="App">
-      <Routee/>
+      <Routes />
     </div>
   );
 }
