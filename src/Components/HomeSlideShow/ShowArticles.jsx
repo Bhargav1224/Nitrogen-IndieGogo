@@ -16,11 +16,8 @@ export const ShowArticles = ({ articles }) => {
                       color: "green",
                       marginLeft: "10px",
                       marginTop: "-1px",
-<<<<<<< HEAD
-                      // fontFamily: "'Tajawal', sans-serif",
-=======
-                      fontFamily: "'Tajawal', sans-serif;",
->>>>>>> 03fa8a7bf6e8b29ad160e9fe7d4a8d84ed16f7b5
+
+
                     }}
                   >
                     FUNDING
