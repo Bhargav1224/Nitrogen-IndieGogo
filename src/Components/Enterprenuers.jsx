@@ -70,6 +70,7 @@ const CampAcc = styled.div`
   margin: auto;
   height: 200px;
   grid-template: "cp in";
+  margin-bottom:130px;
 `;
 const Camp = styled.div`
   width: 95%;
@@ -177,8 +178,9 @@ const Img3 = styled.img`
   width: 30%;
 `;
 const Project=styled.div`
-background-color:#fae4e4;
+background-color:#fdf4f4;
 padding:10px;
+margin-top:30px;
 `
 const Spn=styled.span`
 font-size:14px;
