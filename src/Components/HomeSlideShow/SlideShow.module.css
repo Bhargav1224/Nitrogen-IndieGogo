@@ -1,0 +1,303 @@
+/* Slideshow css */
+
+.centerbox {
+	/* border: 1px solid red; */
+	display: flex;
+}
+
+.maincontainer {
+	border: 1px solid grey;
+	height: 650px;
+	width: 500px;
+	margin: 10px;
+	cursor: pointer;
+}
+.maincontainer:hover {
+	transform: scale(1.01);
+	box-shadow: 5px 5px 5px grey;
+}
+.imghoverzoom {
+	/* border: 1px solid blue; */
+	margin: auto;
+	width: 100%;
+	height: 50%;
+}
+.imagewidth {
+	width: 100%;
+	height: 100%;
+}
+.titlehover {
+	color: grey;
+	margin-left: 10px;
+}
+.titlehover:hover {
+	color: red;
+}
+.description,
+.subheading {
+	text-align: center;
+	color: gray;
+}
+.subheading {
+	color: black;
+}
+.shares {
+	margin: auto;
+}
+.shares > .progresssymbol {
+	border: 0px solid;
+	cursor: pointer;
+	height: 10px;
+	position: relative;
+	width: 97%;
+	background-color: rgb(125, 223, 101);
+	border-radius: 50px;
+}
+.changecontent {
+	border: none;
+	outline: none;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	width: 40px;
+	margin: 6px;
+	height: 40px;
+	border-radius: 50%;
+}
+.changecontent:hover {
+	background-color: black;
+	color: white;
+}
+
+/* collectionPage ----css */
+
+.collectionbox {
+	cursor: pointer;
+	/* border: 1px solid grey; */
+	width: 46%;
+	height: 450px;
+	margin: 20px;
+	margin-top: 30px;
+	margin-left: 7px;
+	float: left;
+}
+.collectionbox > img {
+	height: 90%;
+	width: 100%;
+}
+.imagetitle {
+	margin-top: -250px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+.collectiontitle {
+	text-align: left;
+	margin-top: 210px;
+	clear: both;
+	margin-left: 10px;
+	color: rgb(46, 42, 42);
+}
+.collectionlinks {
+	text-align: right;
+	margin-left: 260px;
+	margin-top: -45px;
+}
+.collectionlinks > p {
+	color: rgb(58, 88, 6);
+}
+.collectionlinks > p:hover {
+	color: red;
+}
+.crowdfunding {
+	width: 95%;
+	height: 350px;
+	/* border: 1px solid red; */
+	margin-left: 7px;
+	clear: both;
+}
+
+.crowdfunding > img {
+	cursor: pointer;
+	width: 100%;
+
+	height: 100%;
+}
+
+.crowdtitle {
+	margin-top: -300px;
+	margin-left: 400px;
+}
+.crowddescription {
+	text-align: center;
+	color: grey;
+}
+.lerancrowd {
+	text-align: center;
+}
+.lerancrowd:hover {
+	color: rgb(221, 13, 204);
+	cursor: pointer;
+	clear: both;
+}
+
+/* middlehome page css */
+.categories {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	clear: both;
+	/* border: 1px solid black; */
+}
+.categories > h3 {
+	color: rgb(61, 58, 58);
+}
+.interestbtn {
+	width: 350px;
+	height: 50px;
+	margin: auto;
+	margin-top: 40px;
+	/* border: 0.5px solid grey; */
+}
+.interestbtn > button {
+	display: block;
+	margin: auto;
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 15px;
+	outline: none;
+}
+.interestbtn > button:hover {
+	background-color:rgb(206, 201, 201);
+	
+}
+.topcategories > {
+	clear: both;
+	text-align: center;
+}
+.topsixcateg {
+	width: 95%;
+	height: 250px;
+	/* border: 1px solid grey; */
+	margin-left: 7px;
+}
+.topsixcateg > div {
+	/* border: 1px solid grey; */
+	width: 175px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+.topsixcateg > div:hover {
+	box-shadow: 5px 3px 3px 3px grey;
+}
+
+.topsixcateg > div > img {
+	width: 100%;
+	height: 80%;
+}
+.topsixcateg > div > h3 {
+	margin-top: -5px;
+	text-align: center;
+}
+
+/* Review part css */
+.reviewheading {
+	text-align: center;
+}
+.reviewbox {
+	width: 95%;
+	margin-left: 7px;
+	height: 500px;
+	/* border: 1px solid grey; */
+}
+.curiouscontent2 {
+	font-size: 20px;
+}
+.reviewbox > div:nth-child(odd) {
+	/* border: 1px solid black; */
+	float: left;
+	width: 32%;
+	height: 47%;
+	margin: 10px;
+}
+
+.reviewbox > div:nth-child(even) {
+	/* border: 1px solid black; */
+	float: left;
+	width: 30%;
+	height: 33%;
+	margin: 10px;
+}
+.reviewimagedimentions {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.reviewimageboxcontent {
+	/* border: 1px solid grey; */
+	width: 350px;
+	margin: auto;
+	height: 200px;
+	margin-top: 20px;
+}
+.reviewimageboxcontent2 {
+	/* border: 1px solid grey; */
+	width: 380px;
+	margin: auto;
+	height: 175px;
+	margin-top: 20px;
+}
+.readmoreindicator {
+	color: rgb(66, 65, 65);
+}
+.readmoreindicator:hover {
+	color: orangered;
+	cursor: pointer;
+}
+
+/* above footerpart css */
+.curiousthings,
+.curiouscontent {
+	text-align: center;
+	color: rgb(63, 60, 60);
+}
+.curiouscontent {
+	font-size: 20px;
+}
+.footeraboveimage > div {
+	float: left;
+}
+.footeraboveimage > div > img {
+	margin-left: 7px;
+	margin-top: 50px;
+}
+.footeraboveimage > div > :nth-child(2) {
+	margin: auto;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+/* buttons css */
+.buttonsforlearn {
+	margin: auto;
+	/* border: 1px solid grey; */
+	height: 60px;
+	width: 400px;
+	margin-top: 170px;
+}
+.buttonsforlearn > button {
+	width: 150px;
+	height: 50px;
+	margin: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+.buttonsforlearn > button:nth-child(1) {
+	background-color: rgb(192, 45, 143);
+	color: white;
+}
+.buttonsforlearn > button:nth-child(2):hover{
+	background-color:rgb(206, 201, 201);
+}
