@@ -16,3 +16,6 @@ export const mockapi = ( limit = 12) => {
 	});
 };
 
+export const sortdata = () => {
+	
+}
