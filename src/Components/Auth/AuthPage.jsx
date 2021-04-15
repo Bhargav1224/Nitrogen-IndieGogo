@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import styles from "./AuthPage.module.css";
 import { fire } from "../Firebase/fire";
-import { Footer } from "../Footer/Footer";
+import { Redirect } from "react-router-dom";
 
 export const AuthPage = () => {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState();
   const [email, setEmail] = useState("");
   const [signUpEmail, setSignUpEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,11 +18,22 @@ export const AuthPage = () => {
     setSignUpPassword("");
   };
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     fire.auth().signInWithEmailAndPassword(email, password);
+    authListener();
+    console.log(user);
   };
-  const handleSignUp = () => {
-    fire.auth().createUserWithEmailAndPassword(signUpEmail, signUpPassword);
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    fire
+      .auth()
+      .createUserWithEmailAndPassword(signUpEmail, signUpPassword)
+      .then((user) => {
+        fire.database().ref(`users/${user.uid}`).set({ displayName: "stark" });
+      });
+    authListener();
   };
 
   const handleLogout = () => {
@@ -34,105 +45,119 @@ export const AuthPage = () => {
       if (user) {
         clearInputs();
         setUser(user);
+        console.log(user);
       } else {
         setUser("");
       }
     });
   };
 
+  let emailId;
+  let userName;
+  if (user != null) {
+    emailId = user.email;
+    if (emailId != null) {
+      let userData = emailId.split("@");
+      userName = userData[0];
+    }
+  }
+  console.log(userName);
   useEffect(() => {
     authListener();
   }, []);
   return (
     <>
-      <MainCont>
-        <FacebookCont>
-          <h1>Get Started Quickly</h1>
-          <p>Activate your community and discover what your friends are funding.</p>
-          <p>No posts without your permission.</p>
-          <FacebookBtn className={styles.facebookBtn}>SIGN IN WITH FACEBOOK</FacebookBtn>
-        </FacebookCont>
+      {user ? (
+        <Redirect to={"/"} />
+      ) : (
+        <MainCont>
+          <FacebookCont>
+            <h1>Get Started Quickly</h1>
+            <p>Activate your community and discover what your friends are funding.</p>
+            <p>No posts without your permission.</p>
+            <FacebookBtn className={styles.facebookBtn}>SIGN IN WITH FACEBOOK</FacebookBtn>
+          </FacebookCont>
 
-        <SignUpCont>
-          <h1>Sign Up</h1>
-          <FormCont>
-            <InputCont>
-              <input type="text" placeholder="First Name" />
-            </InputCont>
-            <InputCont>
-              <input type="text" placeholder="Last Name" />
-            </InputCont>{" "}
-            <InputCont>
-              <input
-                type="email"
-                placeholder="Email"
-                required
-                value={signUpEmail}
-                onChange={(e) => setSignUpEmail(e.target.value)}
-              />
-            </InputCont>
-            <InputCont>
-              <input
-                type="password"
-                placeholder="Password"
-                required
-                value={signUpPassword}
-                onChange={(e) => setSignUpPassword(e.target.value)}
-              />
-            </InputCont>
-            <CheckboxCont>
-              <input type="checkbox" />
-              <p>Sign me up for the weekly newsletter</p>
-            </CheckboxCont>
-            <CheckboxCont>
-              <input type="checkbox" required />
-              <p>I agree to the Terms of Use and have read and understand the Privacy Policy</p>
-            </CheckboxCont>
-            <CaptchaCont>
-              <CaptchaCheck>
+          <SignUpCont>
+            <h1>Sign Up</h1>
+            <FormCont>
+              <InputCont>
+                <input type="text" placeholder="First Name" />
+              </InputCont>
+              <InputCont>
+                <input type="text" placeholder="Last Name" />
+              </InputCont>{" "}
+              <InputCont>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  value={signUpEmail}
+                  onChange={(e) => setSignUpEmail(e.target.value)}
+                />
+              </InputCont>
+              <InputCont>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  required
+                  value={signUpPassword}
+                  onChange={(e) => setSignUpPassword(e.target.value)}
+                />
+              </InputCont>
+              <CheckboxCont>
+                <input type="checkbox" />
+                <p>Sign me up for the weekly newsletter</p>
+              </CheckboxCont>
+              <CheckboxCont>
                 <input type="checkbox" required />
-                <p>I'm not a robot</p>
-              </CaptchaCheck>
-              <img
-                width="60px"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/1024px-RecaptchaLogo.svg.png"
-                alt="captcha"
-              />
-            </CaptchaCont>
-            <SignBtn className={styles.signInBtn} onClick={handleSignUp}>
-              CREATE AN ACCOUNT
-            </SignBtn>
-          </FormCont>
-        </SignUpCont>
-        <LoginCont>
-          <h1>Log In</h1>
-          <FormCont>
-            <InputCont>
-              <input
-                type="email"
-                placeholder="Email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </InputCont>
-            <InputCont>
-              <input
-                type="password"
-                placeholder="Password"
-                required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </InputCont>
-            <SignBtn className={styles.signInBtn} onClick={handleLogin}>
-              LOG IN
-            </SignBtn>
-          </FormCont>
-        </LoginCont>
-        {/* <button onClick={handleLogout}>Log out</button> */}
-      </MainCont>
-      <Footer />
+                <p>I agree to the Terms of Use and have read and understand the Privacy Policy</p>
+              </CheckboxCont>
+              <CaptchaCont>
+                <CaptchaCheck>
+                  <input type="checkbox" required />
+                  <p>I'm not a robot</p>
+                </CaptchaCheck>
+                <img
+                  width="60px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/1024px-RecaptchaLogo.svg.png"
+                  alt="captcha"
+                />
+              </CaptchaCont>
+              <SignBtn className={styles.signInBtn} onClick={handleSignUp}>
+                CREATE AN ACCOUNT
+              </SignBtn>
+            </FormCont>
+          </SignUpCont>
+          <LoginCont>
+            <h1>Log In</h1>
+            <FormCont>
+              <InputCont>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </InputCont>
+              <InputCont>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </InputCont>
+              <SignBtn className={styles.signInBtn} onClick={handleLogin}>
+                LOG IN
+              </SignBtn>
+            </FormCont>
+          </LoginCont>
+          <button onClick={handleLogout}>Log out</button>
+        </MainCont>
+      )}
     </>
   );
 };
