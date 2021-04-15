@@ -37,38 +37,56 @@ export const CrowdFunding = () => {
 			<div className={styles.interestbtn}>
 				<button>SIGNUP AND SELECT YOUR INTEREST</button>
 			</div>
-			<div >
+			<div>
 				<h3 className={styles.topcategories}>Or explore our top categories</h3>
-            </div>
-            <div className={styles.topsixcateg}>
-                <div>
-                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5462376.jpg" alt="Home" />
-                    <h3>HOME</h3>
-                </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65vKrYldm09kL4qG6EwRAaekumOkrJtAAjg&usqp=CAU" alt="phone icon" />
-                    <h3>Phone & Accessories</h3>
-                </div>
-                <div>
-                    <img src="https://m.media-amazon.com/images/I/61ImmGPnU7L._AC_UL320_.jpg" alt="travel icon" />
-                    <h3>Travel & Outdoors</h3>
-                </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2Jy3xuaVIWqTmz4KgKw3tBFwKGcS-GlVhmikdYp3tXMFN7xx6cagIGA8trYm7uzWl9Q&usqp=CAU" alt="health icon" />
-                    <h3>Health & Fitness</h3>
-                </div>
-                <div>
-                    <img src="https://iconfair.com/cepsools/2020/12/Artboard-25.jpg" alt="audio icon"/>
-                    <h3>AUDIO</h3>
-                </div>
-                <div>
-                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6157262.jpg" alt="camera icon" />
-                    <h3>FILM</h3>
-                </div>
-            </div>
-            <div>
-                <Reviews/>
-            </div>
+			</div>
+			<div className={styles.topsixcateg}>
+				<div>
+					<img
+						src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5462376.jpg"
+						alt="Home"
+					/>
+					<h3>HOME</h3>
+				</div>
+				<div>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65vKrYldm09kL4qG6EwRAaekumOkrJtAAjg&usqp=CAU"
+						alt="phone icon"
+					/>
+					<h3>Phone & Accessories</h3>
+				</div>
+				<div>
+					<img
+						src="https://m.media-amazon.com/images/I/61ImmGPnU7L._AC_UL320_.jpg"
+						alt="travel icon"
+					/>
+					<h3>Travel & Outdoors</h3>
+				</div>
+				<div>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2Jy3xuaVIWqTmz4KgKw3tBFwKGcS-GlVhmikdYp3tXMFN7xx6cagIGA8trYm7uzWl9Q&usqp=CAU"
+						alt="health icon"
+					/>
+					<h3>Health & Fitness</h3>
+				</div>
+				<div>
+					<img
+						src="https://iconfair.com/cepsools/2020/12/Artboard-25.jpg"
+						alt="audio icon"
+					/>
+					<h3>AUDIO</h3>
+				</div>
+				<div>
+					<img
+						src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6157262.jpg"
+						alt="camera icon"
+					/>
+					<h3>FILM</h3>
+				</div>
+			</div>
+			<div>
+				<Reviews />
+			</div>
 		</>
 	);
 };

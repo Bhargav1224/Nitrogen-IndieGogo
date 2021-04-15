@@ -59,7 +59,7 @@ export const Reviews = () => {
 						<p className={styles.curiouscontent2}>
 							We’re excited to announce that we’ll be working with Amazon
 							Launchpad to help successful Indiegogo campaigns become
-							flourishing small businesses.
+							flourishing small businesses...!
 						</p>
 						<h4 className={styles.readmoreindicator}>READ NOW &#10095;</h4>
 					</div>
@@ -81,7 +81,7 @@ export const Reviews = () => {
 						<br />
 						special. Begin on Indiegogo to find clever and unconventional things{" "}
 						<br />
-						that solve everyday problems large and small.
+						that solve everyday problems large and small...!
 					</p>
 				</div>
 			</div>

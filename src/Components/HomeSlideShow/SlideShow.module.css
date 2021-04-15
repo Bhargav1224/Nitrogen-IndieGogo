@@ -169,10 +169,10 @@
 	outline: none;
 }
 .interestbtn > button:hover {
-	background-color:rgb(206, 201, 201);
-	
+	background-color: rgb(206, 201, 201);
 }
-.topcategories > {
+
+.topcategories {
 	clear: both;
 	text-align: center;
 }
@@ -298,6 +298,6 @@
 	background-color: rgb(192, 45, 143);
 	color: white;
 }
-.buttonsforlearn > button:nth-child(2):hover{
-	background-color:rgb(206, 201, 201);
+.buttonsforlearn > button:nth-child(2):hover {
+	background-color: rgb(206, 201, 201);
 }
