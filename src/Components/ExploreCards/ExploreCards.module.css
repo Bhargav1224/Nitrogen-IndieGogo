@@ -2,7 +2,7 @@
 
 .databox{
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-left: 330px;
 	/* border: 1px solid black; */
 }
@@ -90,4 +90,30 @@
 	color: white;
 }
 
-/* collectionPage ----css */
+/* explore inputbox ----css */
+.inputboxexplore{
+	margin-top: 30px;
+	width: 69%;
+	height: 60px;
+	/* border: 1px solid grey; */
+	margin-left: 340px;
+}
+.inputboxexplore>input{
+	width: 65%;
+	height: 35px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	outline: none;
+}
+.inputboxexplore>label{
+	margin-left: 30px;
+}
+.inputboxexplore>button{
+	width: 100px;
+	margin-left: 20px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	outline: none;
+
+}
