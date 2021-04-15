@@ -38,7 +38,7 @@ export const Navbar = () => {
             Log in
           </NavLink>
           <NavLink to="/login" className={styles.navitemright}>
-            Log out
+            Sign Up
           </NavLink>
         </div>
       </nav>
