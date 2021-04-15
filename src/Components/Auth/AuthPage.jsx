@@ -3,6 +3,9 @@ import styled from "styled-components";
 import styles from "./AuthPage.module.css";
 import { fire } from "../Firebase/fire";
 import { Redirect } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { loginSuccess } from "../../Redux/auth/authAction";
+import { Footer } from "../Footer/Footer";
 
 export const AuthPage = () => {
   const [user, setUser] = useState();
@@ -10,6 +13,7 @@ export const AuthPage = () => {
   const [signUpEmail, setSignUpEmail] = useState("");
   const [password, setPassword] = useState("");
   const [signUpPassword, setSignUpPassword] = useState("");
+  const dispatch = useDispatch();
 
   const clearInputs = () => {
     setEmail("");
@@ -20,9 +24,13 @@ export const AuthPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    fire.auth().signInWithEmailAndPassword(email, password);
+    fire
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch((err) => {
+        alert(err.code);
+      });
     authListener();
-    console.log(user);
   };
 
   const handleSignUp = (e) => {
@@ -32,12 +40,11 @@ export const AuthPage = () => {
       .createUserWithEmailAndPassword(signUpEmail, signUpPassword)
       .then((user) => {
         fire.database().ref(`users/${user.uid}`).set({ displayName: "stark" });
+      })
+      .catch((err) => {
+        alert(err.code);
       });
     authListener();
-  };
-
-  const handleLogout = () => {
-    fire.auth().signOut();
   };
 
   const authListener = () => {
@@ -59,12 +66,18 @@ export const AuthPage = () => {
     if (emailId != null) {
       let userData = emailId.split("@");
       userName = userData[0];
+      let payload = {
+        user: true,
+        userName: userName,
+      };
+      dispatch(loginSuccess(payload));
     }
   }
   console.log(userName);
   useEffect(() => {
     authListener();
   }, []);
+  console.log(user);
   return (
     <>
       {user ? (
@@ -155,9 +168,9 @@ export const AuthPage = () => {
               </SignBtn>
             </FormCont>
           </LoginCont>
-          <button onClick={handleLogout}>Log out</button>
         </MainCont>
       )}
+      <Footer />
     </>
   );
 };
