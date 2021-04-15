@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
+import { Footer } from "./Footer/Footer";
 
 const Maindiv = styled.div`
   text-align: center;
@@ -14,8 +15,7 @@ const Slider = styled.div`
 `;
 const Img = styled.img`
   height: 500px;
-  filter:brightness(70%);
-
+  filter: brightness(70%);
 `;
 const Div = styled.div`
   width: 43%;
@@ -25,32 +25,34 @@ const Div = styled.div`
   right: 3%;
   top: 20%;
   padding: 15px;
-  padding-top:25px;
+  padding-top: 25px;
 `;
-const High1= styled.h1`
-font-size:30px;`
+const High1 = styled.h1`
+  font-size: 30px;
+`;
 
-const Div2= styled.div`
-top:25%;
-width:35%;
-position:absolute;
-height:300px;
-left:6%;
-color:white;
-`
+const Div2 = styled.div`
+  top: 25%;
+  width: 35%;
+  position: absolute;
+  height: 300px;
+  left: 6%;
+  color: white;
+`;
 
-const Span=styled.span`
-font-size:18px;`
-
+const Span = styled.span`
+  font-size: 18px;
+`;
 
 const Slide = styled.div`
   position: relative;
   text-align: left;
 `;
 
-const High=styled.p`
-text-decoration:underline;
-font-size:20px;`
+const High = styled.p`
+  text-decoration: underline;
+  font-size: 20px;
+`;
 const Button = styled.button`
   width: 200px;
   height: 40px;
@@ -70,19 +72,19 @@ const CampAcc = styled.div`
   margin: auto;
   height: 200px;
   grid-template: "cp in";
-  margin-bottom:130px;
+  margin-bottom: 130px;
 `;
 const Camp = styled.div`
   width: 95%;
   grid-area: cp;
   padding: 10px;
-  border:1px solid grey;
+  border: 1px solid grey;
 `;
 const Indem = styled.div`
   width: 95%;
   grid-area: in;
   padding: 10px;
-  border:1px solid grey;
+  border: 1px solid grey;
 `;
 const Imgicon = styled.img`
   height: 70px;
@@ -162,31 +164,30 @@ const Div3 = styled.div`
 `;
 const Div4 = styled.div`
   width: 22%;
-  border:1px solid grey;
+  border: 1px solid grey;
 `;
 const Head1 = styled.h1`
   color: hotpink;
-  
 `;
-const Head2=styled.h2`
-font-size:26px;
-`
+const Head2 = styled.h2`
+  font-size: 26px;
+`;
 const Para1 = styled.p`
   font-size: 18px;
 `;
 const Img3 = styled.img`
   width: 30%;
 `;
-const Project=styled.div`
-background-color:#fdf4f4;
-padding:10px;
-margin-top:30px;
-`
-const Spn=styled.span`
-font-size:14px;
-color:#fa7288;
-text-decoration:none;
-`
+const Project = styled.div`
+  background-color: #fdf4f4;
+  padding: 10px;
+  margin-top: 30px;
+`;
+const Spn = styled.span`
+  font-size: 14px;
+  color: #fa7288;
+  text-decoration: none;
+`;
 export const Enterprenuers = () => {
   return (
     <Maindiv>
@@ -197,9 +198,8 @@ export const Enterprenuers = () => {
             <Div>
               <High1>Get the Crowdfunding Field Guide</High1>
               <Span>
-                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how
-                to begin? Our handy guide walks you through every step of a
-                successful project.
+                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how to begin? Our handy guide walks you
+                through every step of a successful project.
               </Span>
               <br />
               <Button>READ THE GUIDE</Button>
@@ -207,7 +207,10 @@ export const Enterprenuers = () => {
             <Div2>
               <High>Featured</High>
               <h4>Celebrate Earth Day With Crowdfunding Changemakers (April 20-22)</h4>
-              <p>Join us for a series of live roundtable panels with entrepreneurs and creators to discuss the future of green tech, sustainable fashion, electric transportation, the perils of greenwashing, and more!</p>
+              <p>
+                Join us for a series of live roundtable panels with entrepreneurs and creators to discuss the future of
+                green tech, sustainable fashion, electric transportation, the perils of greenwashing, and more!
+              </p>
               <h4>SIGN UP NOW</h4>
             </Div2>
           </Slide>
@@ -216,9 +219,8 @@ export const Enterprenuers = () => {
             <Div>
               <h1>Get the Crowdfunding Field Guide</h1>
               <span>
-                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how
-                to begin? Our handy guide walks you through every step of a
-                successful project.
+                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how to begin? Our handy guide walks you
+                through every step of a successful project.
               </span>
               <br />
               <Button>READ THE GUIDE</Button>
@@ -226,7 +228,10 @@ export const Enterprenuers = () => {
             <Div2>
               <High>Featured</High>
               <h4>Checklist: Ways to engage with your community</h4>
-              <p>75% of backers want to communicate with the campaign owner before contributing to a campaign. Download the Community Checklist to learn how to take control and foster your community.</p>
+              <p>
+                75% of backers want to communicate with the campaign owner before contributing to a campaign. Download
+                the Community Checklist to learn how to take control and foster your community.
+              </p>
               <h4>DOWNLOAD THE CHECKLIST</h4>
             </Div2>
           </Slide>
@@ -235,16 +240,18 @@ export const Enterprenuers = () => {
             <Div>
               <h1>Get the Crowdfunding Field Guide</h1>
               <span>
-                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how
-                to begin? Our handy guide walks you through every step of a
-                successful project.
+                Indiegogo is a launchpad for entrepreneurial ideas. Not sure how to begin? Our handy guide walks you
+                through every step of a successful project.
               </span>
               <br />
               <Button>READ THE GUIDE</Button>
             </Div>
             <Div2>
               <High>Featured</High>
-              <p>Simply enter where you’re shipping to and from and in just a few clicks, you’ll gain instant insight on how best to price your perks (and save on shipping)</p>
+              <p>
+                Simply enter where you’re shipping to and from and in just a few clicks, you’ll gain instant insight on
+                how best to price your perks (and save on shipping)
+              </p>
               <h4>GET A SHIPPING QUOTE</h4>
             </Div2>
           </Slide>
@@ -253,7 +260,8 @@ export const Enterprenuers = () => {
             <Div>
               <h1>Explore the Experts Directory</h1>
               <span>
-              Go to market with these experts in marketing, creative services, retail, and other professional services.
+                Go to market with these experts in marketing, creative services, retail, and other professional
+                services.
               </span>
               <br />
               <Button>DISCOVER EXPERTS</Button>
@@ -261,7 +269,10 @@ export const Enterprenuers = () => {
             <Div2>
               <High>Featured</High>
               <h4>Celebrate Earth Day With Crowdfunding Changemakers (April 20-22)</h4>
-              <p>Join us for a series of live roundtable panels with entrepreneurs and creators to discuss the future of green tech, sustainable fashion, electric transportation, the perils of greenwashing, and more!</p>
+              <p>
+                Join us for a series of live roundtable panels with entrepreneurs and creators to discuss the future of
+                green tech, sustainable fashion, electric transportation, the perils of greenwashing, and more!
+              </p>
               <h4>SIGN UP NOW</h4>
             </Div2>
           </Slide>
@@ -276,8 +287,7 @@ export const Enterprenuers = () => {
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-crowdfunding-80px@2x-e1515527153625.png" />
           <h2>Raise funds with a crowdfunding campaign</h2>
           <span>
-            Acquire starter capital and validate your idea by tapping into
-            Indiegogo’s global network of early adopters.
+            Acquire starter capital and validate your idea by tapping into Indiegogo’s global network of early adopters.
           </span>
           <br />
           <br />
@@ -289,9 +299,8 @@ export const Enterprenuers = () => {
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/08/IGG_entrepreneur-site-indemand-50px@2x.png" />
           <h2>Extend your campaign with InDemand</h2>
           <span>
-            After your crowdfunding campaign, continue raising money and
-            building your community with InDemand. No fundraising target, no
-            deadline limits.
+            After your crowdfunding campaign, continue raising money and building your community with InDemand. No
+            fundraising target, no deadline limits.
           </span>
           <br />
           <br />
@@ -305,10 +314,9 @@ export const Enterprenuers = () => {
         <EntData>
           <h2>Entrepreneur Services</h2>
           <span>
-            From concept to market, Indiegogo Entrepreneur Services is here to
-            help. More than a crowdfunding platform, Indiegogo offers services
-            and resources from key partners to empower entrepreneurs throughout
-            the life of their project.
+            From concept to market, Indiegogo Entrepreneur Services is here to help. More than a crowdfunding platform,
+            Indiegogo offers services and resources from key partners to empower entrepreneurs throughout the life of
+            their project.
           </span>
         </EntData>
       </Enterpreneur>
@@ -353,8 +361,8 @@ export const Enterprenuers = () => {
         <h4>Ready to Start Your Business?</h4>
         <h2>Get the Essential Crowdfunding Field Guide</h2>
         <H5>
-          We worked with our Campaign Strategists to compile all the best
-          practices and inspiring examples of a great crowdfunding experience.
+          We worked with our Campaign Strategists to compile all the best practices and inspiring examples of a great
+          crowdfunding experience.
         </H5>
         <Button>READ THE GUIDE</Button>
       </DivGuide>
@@ -362,15 +370,10 @@ export const Enterprenuers = () => {
         <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" />
         <IndData>
           <h2>Indiegogo China: Your Fast Track to the Global Market</h2>
+          <span>We’re here to help China’s top innovative products launch in U.S. and Western markets.</span>
           <span>
-            We’re here to help China’s top innovative products launch in U.S.
-            and Western markets.
-          </span>
-          <span>
-            In the past two years alone, products from China have raised nearly
-            $100 million on Indiegogo. Our team offers unparalleled support and
-            resources to help you with the challenges of cross-border
-            crowdfunding.
+            In the past two years alone, products from China have raised nearly $100 million on Indiegogo. Our team
+            offers unparalleled support and resources to help you with the challenges of cross-border crowdfunding.
           </span>
           <hr />
           <Link>
@@ -388,25 +391,23 @@ export const Enterprenuers = () => {
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/04/IGG_HowItWorks_SuccessStories_387x387px_nomaticbag.jpg" />
           <Para1>
-            The NOMATIC travel bag is shipping their products worldwide to 7K
-            backers after raising $3M in crowdfunding on Indiegogo.
+            The NOMATIC travel bag is shipping their products worldwide to 7K backers after raising $3M in crowdfunding
+            on Indiegogo.
             <Link>Learn More</Link>
           </Para1>
         </div>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/04/IGG_HowItWorks_SuccessStories_387x387px_hyperdrive2.jpg" />
           <Para1>
-            HyperDrive Thunderbolt 3 USB-C Hub for MacBook Pro raised $1M+ on
-            InDemand, by targeting outreach to grow a loyal community of
-            backers.<Link>Learn More</Link>
+            HyperDrive Thunderbolt 3 USB-C Hub for MacBook Pro raised $1M+ on InDemand, by targeting outreach to grow a
+            loyal community of backers.<Link>Learn More</Link>
           </Para1>
         </div>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HowItWorks_SuccessStories_387x387px_bullrest1.jpg" />
           <Para1>
-            After raising $381K on Indiegogo, BullRest - the reinvented travel
-            pillow - launched on Indiegogo Product Marketplace with guaranteed
-            shipping.<Link>Learn More</Link>
+            After raising $381K on Indiegogo, BullRest - the reinvented travel pillow - launched on Indiegogo Product
+            Marketplace with guaranteed shipping.<Link>Learn More</Link>
           </Para1>
         </div>
       </Flex2>
@@ -416,16 +417,11 @@ export const Enterprenuers = () => {
         <Flex3>
           <Div3>
             <Head1>1B+</Head1>
-            <Para1>
-              Total raised across all projects, from dance to design.
-            </Para1>
+            <Para1>Total raised across all projects, from dance to design.</Para1>
           </Div3>
           <Div3>
             <Head1>11MM+</Head1>
-            <Para1>
-              Contributions from our amazing community of backers for 650k+
-              projects.
-            </Para1>
+            <Para1>Contributions from our amazing community of backers for 650k+ projects.</Para1>
           </Div3>
           <Div3>
             <Head1>223</Head1>
@@ -440,19 +436,23 @@ export const Enterprenuers = () => {
       <div>
         <h1>Ready to Go?</h1>
         <p>
-          You're only a step away from kicking off your entrepreneurial
-          adventure on Indiegogo. Here's where to go next:
+          You're only a step away from kicking off your entrepreneurial adventure on Indiegogo. Here's where to go next:
         </p>
         <Flex3>
           <Div4>
             <Img3 src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-crowdfunding-80px@2x-e1515527153625.png" />
             <Head2>Start a Campaign</Head2>
-            <Para1>Take the plunge with our guided campaign-creation tool. It’s free, and you can easily start now and finish later.</Para1>
+            <Para1>
+              Take the plunge with our guided campaign-creation tool. It’s free, and you can easily start now and finish
+              later.
+            </Para1>
           </Div4>
           <Div4>
             <Img3 src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-experts-directory-80px@2x.png" />
             <Head2>Experts Directory</Head2>
-            <Para1>Take your idea further with these experienced companies recommended by Indiegogo campaigners and staff.</Para1>
+            <Para1>
+              Take your idea further with these experienced companies recommended by Indiegogo campaigners and staff.
+            </Para1>
           </Div4>
           <Div4>
             <Img3 src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-Education-center-80px@2x.png" />
@@ -466,6 +466,7 @@ export const Enterprenuers = () => {
           </Div4>
         </Flex3>
       </div>
+      <Footer />
     </Maindiv>
   );
 };
