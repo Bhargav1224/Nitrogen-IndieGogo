@@ -1,11 +1,9 @@
-
-import './App.css';
-import { SlideShow } from './Components/HomeSlideShow/SlideShow';
-
+import "./App.css";
+import { Routes } from "./Routes/Routes";
 function App() {
   return (
     <div className="App">
-      <SlideShow/>
+      <Routes />
     </div>
   );
 }

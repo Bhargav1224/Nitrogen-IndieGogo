@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import styles from "./AuthPage.module.css";
 import { fire } from "../Firebase/fire";
+import { Footer } from "../Footer/Footer";
 
 export const AuthPage = () => {
   const [user, setUser] = useState("");
@@ -129,8 +130,9 @@ export const AuthPage = () => {
             </SignBtn>
           </FormCont>
         </LoginCont>
-        <button onClick={handleLogout}>Log out</button>
+        {/* <button onClick={handleLogout}>Log out</button> */}
       </MainCont>
+      <Footer />
     </>
   );
 };
@@ -141,7 +143,6 @@ const MainCont = styled.div`
   width: 80%;
   height: 70vh;
   margin: 5% auto;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -150,7 +151,6 @@ const MainCont = styled.div`
 const FacebookCont = styled.div`
   width: 30%;
   height: 96%;
-  border: 1px solid black;
   & > h1 {
     font-weight: 400;
   }
@@ -165,13 +165,11 @@ const FacebookCont = styled.div`
 const SignUpCont = styled.div`
   width: 30%;
   height: 96%;
-  border: 1px solid black;
 `;
 
 const LoginCont = styled.div`
   width: 30%;
   height: 96%;
-  border: 1px solid black;
 `;
 
 const FacebookBtn = styled.button`
@@ -183,7 +181,6 @@ const FormCont = styled.form`
   width: 95%;
   margin: 4% auto;
   padding: 2%;
-  border: 1px solid black;
   background-color: white;
 `;
 

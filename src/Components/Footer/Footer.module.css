@@ -1,0 +1,98 @@
+.maincontainer{
+    background-color: #f5f5f5;
+}
+.container{
+    color:#62727b;
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.col1{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row1{
+    list-style-type: none;
+}
+.row2{
+    list-style-type: none;
+}
+.row3{
+    list-style-type: none;
+}
+
+.p1{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.li1{
+    margin-bottom: 10px;
+}
+
+.col2{
+    margin-right: 100px;
+    font-size: 14px;
+    width: 25%;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.p2{
+    color:#000000;
+    font-weight:bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.p3{
+    width:300px;
+    margin-left: 35px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.inputemail{
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.inputsubmit{
+    font-size: 12px;
+    margin-top: 20px;
+    background-color: #e51075;;
+    padding:10px 130px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+.inputcheck{
+    margin-right: 5px;
+}
+
+.subcontainer{
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 465px;
+    
+}
+
+.hori{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #62727b;
+}
+.spans{
+    color: #62727b;
+    font-size: 14px;
+    margin-left: 20px;
+}
