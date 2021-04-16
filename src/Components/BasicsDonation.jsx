@@ -1,127 +1,147 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const Select = styled.select`
-  display: flex;
+width:50%;
+height:50px;
+padding:8px;
 `;
-const Nav=styled.div`
-top:10%;
-position:fixed;
-background-color:#ececec;
-width:100%;
+const Nav = styled.div`
+  top: 7%;
+  background-color: #ececec;
+  width: 100%;
+  height:50px;
+  padding:10px;
+`;
+const MainDiv=styled.div`
+width:70%;
+margin:auto;
+`
+const Input=styled.input`
+margin-left:60%;
+background-color:#6d7bf3;
+color:white;
+width:30%;
+height:30px;
+font-size:18px;
+border:none;
+`
+const Inp=styled.input`
+width:60%;
+height:40px;
+padding:8px;
 `
 
 export const Basics = () => {
-    const uploadedImage = React.useRef(null);
+  const uploadedImage = React.useRef(null);
   const imageUploader = React.useRef(null);
 
-  const handleImageUpload = e => {
+  const handleImageUpload = (e) => {
     const [file] = e.target.files;
     if (file) {
       const reader = new FileReader();
       const { current } = uploadedImage;
       current.file = file;
-      reader.onload = e => {
+      reader.onload = (e) => {
         current.src = e.target.result;
       };
       reader.readAsDataURL(file);
     }
   };
   return (
-    <div>
-        
-      <h5>Basics</h5>
+    <MainDiv>
+        <Nav>
+            <h2>Campaigns/Basics</h2>
+        </Nav>
+      <h3>Basics</h3><br/>
       <span>
         Make a good first impression: introduce your campaign objectives and
         entice people to learn more. This basic information will represent your
         campaign on your campaign page, on your campaign card, and in searches.
-      </span>
+      </span><br/><br/>
       <form>
         <div>
-          <label>Campaigning title</label>
+          <label><h3>Campaigning title</h3></label>
           <br />
           <span>What is the title of your campaign</span>
-          <br />
-          <input type="text" placeholder="My Campaign Title" />
-          <br />
+          <br /><br/>
+          <Inp type="text" placeholder="My Campaign Title" />
+          <br /><br/>
         </div>
         <div>
-          <label>Campaign Tagline*</label>
+          <label><h3>Campaign Tagline</h3></label>
           <br />
           <span>
             Provide a short description that best describes your campaign to
             your audience.
           </span>
-          <br />
-          <input type="text-area" />
-          <br />
+          <br /><br/>
+          <input type="text-area" style={{width:"20vw",height:"5vw"}}/>
+          <br /><br/>
         </div>
         <div>
-          <label>Campaign Card Image *</label>
+          <label><h3>Campaign Card Image</h3></label>
           <br />
           <span>Upload a square image that represents your campaign.</span>
-          <br />
+          <br /><br/>
           <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center"
-      }}
-    >
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleImageUpload}
-        ref={imageUploader}
-        style={{
-          display: "none"
-        }}
-      />
-      <div
-        style={{
-          height: "60px",
-          width: "60px",
-          border: "1px dashed black"
-        }}
-        onClick={() => imageUploader.current.click()}
-      >
-        <img
-          ref={uploadedImage}
-          style={{
-            width: "100%",
-            height: "100%",
-            position: "absolute"
-          }}
-        />
-      </div>
-      Click to upload Image
-    </div>
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              ref={imageUploader}
+              style={{
+                display: "none",
+              }}
+            />
+            <div
+              style={{
+                height: "50%",
+                width: "50%",
+                border: "1px dashed black",
+              }}
+              onClick={() => imageUploader.current.click()}
+            >
+              <img
+                ref={uploadedImage}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </div>
+          </div>
 
           <br />
         </div>
-        <div>
-          <label>Location*</label>
+        <div><br/>
+          <label><h3>Location</h3></label>
           <br />
           <span>
             Choose the location where you are running the campaign. This
             location will be visible on your campaign page for your audience to
             see.
           </span>
+          <br /><br/>
+          <Inp type="text" placeholder="Country" />
           <br />
-          <input type="text" placeholder="Country" />
-          <br />
-        </div>
+        </div><br/>
         <div>
-          <label>Category</label>
+          <label><h3>Category</h3></label>
           <br />
           <span>
             To help backers find your campaign, select a category that best
             represents your project.
           </span>
-          <br />
+          <br /><br/>
           <Select>
             <option>Audio</option>
             <option>Camera Gear</option>
@@ -135,35 +155,36 @@ export const Basics = () => {
             <option>Human Rights</option>
           </Select>
         </div>
-        <div>
-          <label>Tags*</label>
+        <div><br/>
+          <label><h3>Tags</h3></label>
           <br />
           <span>
             Enter up to five keywords that best describe your campaign. These
             tags will help with organization and discoverability.
           </span>
           <br />
-          <select>
+          <Select>
             <option value="3d">3d</option>
             <option value="3d printers">3d printers</option>
             <option value="air purifiers">Air purifiers</option>
             <option value="Album">Album</option>
             <option value="Animation">Animation</option>
-          </select>
+          </Select>
           <br />
         </div>
-        <div>
-          <label>Campaign Duration*</label>
+        <div><br/>
+          <label><h3>Campaign Duration</h3></label>
           <br />
           <span>
             How many days will you be running your campaign for? You can run a
             campaign for any number of days, with a 60 day duration maximum.
           </span>
           <br />
-          <input type="text-area"/>
+          <input type="text-area" />
           <br />
-        </div>
+        </div><br/>
+        <Input type="submit" value="SAVE AND CONTINUE" />
       </form>
-    </div>
+    </MainDiv>
   );
 };

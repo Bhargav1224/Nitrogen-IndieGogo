@@ -7,6 +7,7 @@ import { Navbar } from "../Components/Navigation/Navbar";
 import { AuthPage } from "../Components/Auth/AuthPage";
 import { Camp } from "../Components/CampAProject";
 import { Basics } from "../Components/BasicsDonation";
+import { ExploreCards } from "../Components/ExploreCards/ExploreCards";
 export const Routes = () => {
   return (
     <>
@@ -17,6 +18,9 @@ export const Routes = () => {
         </Route>
         <Route path="/how-it-work">
           <Enterprenuers />
+        </Route>
+        <Route path="/explorePage">
+          <ExploreCards />
         </Route>
         <Route exact path="/start-a-campaign">
           <Campaign />
@@ -31,6 +35,9 @@ export const Routes = () => {
           <Basics/>
         </Route>
   
+        <Route>
+          <h1>Error 404! Page Not Found</h1>
+        </Route>
       </Switch>
     </>
   );
