@@ -20,6 +20,7 @@ const Camdiv2 = styled.div`
   filter: grayscale(100%);
   margin: 5px;
   padding: 40px;
+  border:.5px solid black;
   width: 96%;
   margin-top: 50px;
   height: 300px;
@@ -56,7 +57,7 @@ export const Campaign = () => {
       </Camdiv1>
 
       <Camdiv>
-        <Link style={{textDecoration:"none"}}>
+        <Link to={"/start-a-campaign/project"} style={{textDecoration:"none"}}>
           
           <Camdiv2>
             <h2>A project</h2>
