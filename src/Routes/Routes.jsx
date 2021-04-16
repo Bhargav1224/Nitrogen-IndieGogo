@@ -8,6 +8,8 @@ import { AuthPage } from "../Components/Auth/AuthPage";
 import { Camp } from "../Components/CampAProject";
 import { Basics } from "../Components/BasicsDonation";
 import { ExploreCards } from "../Components/ExploreCards/ExploreCards";
+import { PrivateRoute } from "./PrivateRoute";
+
 export const Routes = () => {
   return (
     <>
@@ -28,13 +30,12 @@ export const Routes = () => {
         <Route path="/login">
           <AuthPage />
         </Route>
-        <Route path={"/start-a-campaign/project"}>
-          <Camp/>
-        </Route>
-        <Route path={"/campaigns/basics"}>
-          <Basics/>
-        </Route>
-  
+        <PrivateRoute path="/start-a-campaign/project">
+          <Camp />
+        </PrivateRoute>
+        <PrivateRoute path="/campaigns/basics">
+          <Basics />
+        </PrivateRoute>
         <Route>
           <h1>Error 404! Page Not Found</h1>
         </Route>
