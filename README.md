@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# INDIEGOGO Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![build](https://img.shields.io/travis/USER/REPO.svg) ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  
+<!--- ![Product Presentation Image](public/cover.png) --> 
+This is the project we started as a four memeber team  during [Constructor week](https://www.indiegogo.com/about/what-we-do) organised at [Masai School](https://www.masaischool.com/), Bengaluru, Karnataka. We are trying to build as same as the website is and  still this project is in continuous upgradation and soon will be launched under custom domain .
+# Table of Contents
 
-## Available Scripts
+* [Installation](#installation)
+* [Libery Used](#file-structure)
+* [File Structure](#file-structure)
+* [Contributors](#contributors)
+* [Reporting Issues](#reporting-issues)
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* npm create-create-app App-name
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Libery used
 
-### `npm test`
+* Json-server with heroku
+* Styled Component
+* Redux
+* React Router
+* Firebase
+* React carousel
+* React thunk
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## File Structure
 
-### `npm run build`
+Within the download you'll find the following directories and files:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Himalaya
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Indiegogo
+│   README.md 
+│
+└───Component
+│   │   Auth
+│   │   ExploreCard
+|   |   Firebase
+│   │   Footer
+│   │   Navigation
+|   |   Sidebar
+|   |   HomeSlideShow
+|   |   ImageSlider
+|   |   Enterprenuers
+|   |   Campaign     ...
+|              
+|    
+└───Redux
+│   │   Auth
+│   │   AuthType
+|   |   Reducer
+│   │   store
+│  
+|
+└───Routes
+│   │   Routes ...
+│   
+|    
+└───Utils 
+│   │   LocaStorage ...
+   
+    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Glimpse of our work!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Landing Page](https://user-images.githubusercontent.com/34106521/114999094-2adcfd00-9ebf-11eb-9011-d92724f2abb7.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Enter Page](https://user-images.githubusercontent.com/34106521/114999507-8c04d080-9ebf-11eb-9911-19282cd8a91d.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Login Page](https://user-images.githubusercontent.com/34106521/114999644-adfe5300-9ebf-11eb-809b-e8f7d04c0d21.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributors
 
-### Analyzing the Bundle Size
+<a href="../../../../shubham007kumar" target="_blank"><img src="https://avatars1.githubusercontent.com/u/34106521?s=460&v=4" alt="Shubham Kumar" width="70" height="70" border="10" /></a> 
+<a href="../../../../surya-sd" target="_blank"><img src="https://avatars.githubusercontent.com/u/77038659?v=4" alt="kartik rao" width="70" height="70" border="10" /></a>
+<a href="../../../../Bhargav1224" target="_blank"><img src="https://avatars.githubusercontent.com/u/77038785?v=4" alt="Robin Singh" width="70" height="70" border="10" /></a> 
+<a href="../../../../mahi19071997" target="_blank"><img src="https://avatars.githubusercontent.com/u/75827469?v=4" alt="Ramaruva" width="70" height="70" border="10" /></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Reporting Issues
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We use GitHub Issues as the official bug tracker. Standard Issue/Bug request is supported.
