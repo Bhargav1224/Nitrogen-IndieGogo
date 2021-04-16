@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { mockapi } from "./mockapi";
 import styles from "./ExploreCards.module.css";
 import axios from "axios";
-
 import { ShowExploreCards } from "./ShowExploreCards";
+import { Sidebar } from "../Sidebar/Sidebar1";
+import { Footer } from "../Footer/Footer";
 export const ExploreCards = () => {
   const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState("");
@@ -30,7 +31,13 @@ export const ExploreCards = () => {
     }
   };
   const handleQuery = () => {
-    axios.get(`https://mymock-server-shubham00.herokuapp.com/campaign?category=${query}`).then((res) => {
+    axios.get(`https://mymock-server-shubham00.herokuapp.com/campaign?category=${query.toUpperCase()}`).then((res) => {
+      return setArticles(res.data);
+    });
+  };
+
+  const handleCategory = (input) => {
+    axios.get(`https://mymock-server-shubham00.herokuapp.com/campaign?category=${input}`).then((res) => {
       return setArticles(res.data);
     });
   };
@@ -44,6 +51,17 @@ export const ExploreCards = () => {
 
   return (
     <div>
+      <div style={{ width: "100%" }}>
+        <img
+          width="100%"
+          height="300px"
+          src="https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="banner"
+        />
+      </div>
+      <div style={{ position: "absolute", width: "300px", padding: "10px", textAlign: "center" }}>
+        <Sidebar handleCategory={handleCategory} />
+      </div>
       <div className={styles.inputboxexplore}>
         <input
           type="text"
@@ -70,6 +88,7 @@ export const ExploreCards = () => {
       >
         <ShowExploreCards articles={articles} />
       </div>
+      <Footer />
     </div>
   );
 };
