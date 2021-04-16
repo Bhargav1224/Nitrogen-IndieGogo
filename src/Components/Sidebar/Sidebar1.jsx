@@ -64,6 +64,10 @@ export const Sidebar = ({ handleCategory }) => {
               <div style={{ display: "block", padding: "10px 10px" }}>
                 <p onClick={(e) => handleSelect(e.target.innerHTML)}>Audio</p>
                 <p onClick={(e) => handleSelect(e.target.innerHTML)}>Camera Gear</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Education</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Energy </p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Fashion</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Health</p>
               </div>
             ) : (
               <div style={{ display: "none" }}>
@@ -86,6 +90,9 @@ export const Sidebar = ({ handleCategory }) => {
               <div style={{ display: "block", width: "200px" }}>
                 <p onClick={(e) => handleSelect(e.target.innerHTML)}>Art</p>
                 <p onClick={(e) => handleSelect(e.target.innerHTML)}>Music</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Comics</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Film</p>
+                <p onClick={(e) => handleSelect(e.target.innerHTML)}>Photography</p>
               </div>
             ) : (
               <div style={{ display: "none" }}>
@@ -96,18 +103,18 @@ export const Sidebar = ({ handleCategory }) => {
         </div>
         <p style={{ padding: "10px 10px", width: "200px" }}>Project timing</p>
         <form style={{ padding: "10px 10px", width: "200px" }}>
-          <label style={{ width: "200px", padding: "10px 10px" }}>
-            <input type="checkbox" />
+          <label style={{ width: "100px", display: "flex", justifyContent: "space-between", marginLeft: "20px" }}>
+            <input type="checkbox" style={{ width: "30px" }} />
             All
           </label>
           <br />
-          <label style={{ width: "200px" }}>
-            <input type="checkbox" />
+          <label style={{ width: "100px", display: "flex", justifyContent: "space-between", marginLeft: "20px" }}>
+            <input type="checkbox" style={{ width: "30px" }} />
             Launching
           </label>
           <br />
-          <label style={{ width: "200px" }}>
-            <input type="checkbox" />
+          <label style={{ width: "100px", display: "flex", justifyContent: "space-between", marginLeft: "20px" }}>
+            <input type="checkbox" style={{ width: "30px" }} />
             Ending
           </label>
         </form>
