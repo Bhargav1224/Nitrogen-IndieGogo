@@ -81,7 +81,7 @@ export const Reviews = () => {
 						<br />
 						special. Begin on Indiegogo to find clever and unconventional things{" "}
 						<br />
-						that solve everyday problems large and small.
+						that solve everyday problems large and small...!
 					</p>
 				</div>
 			</div>

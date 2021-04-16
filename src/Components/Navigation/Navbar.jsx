@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "./Dropdown";
 
 export const Navbar = () => {
-  const [drop, setDrop] = useState(true);
+  const [drop, setDrop] = useState(false);
   const [page, setPage] = useState(false);
   const handledrop = () => {
     setDrop(!drop);
@@ -42,7 +42,7 @@ export const Navbar = () => {
           </NavLink>
         </div>
       </nav>
-      {page ? null : <Dropdown />}
+      {page ? <Dropdown /> : null}
     </div>
   );
 };

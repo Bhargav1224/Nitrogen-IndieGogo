@@ -38,41 +38,39 @@ export const Dropdown=()=>{
                     <NavLink to='/' className={styles.customlink}>Food & Beverage</NavLink><br/>
                   </div>
                   <div className={styles.col21}>
-                     <NavLink to='/' className={styles.customlink}>Audio</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Camera Gear</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Education</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Energy and Tech</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Fashion & Wearbles</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Food & Beverage</NavLink><br/>
+                     <NavLink to='/' className={styles.customlink}>Health & Fitness</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Home</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Phones & Accessories</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Productivity</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Transportation</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Travel & Outdoors</NavLink><br/>
                   </div>
               </div>
               <div className={styles.row2}>
                   <p className={styles.row2p}>CREATIVE WORKS</p>
               <div className={styles.col12}>
-                    <NavLink to='/' className={styles.customlink}>Audio</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Camera Gear</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Education</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Energy and Tech</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Fashion & Wearbles</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Food & Beverage</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Podcasts, Blogs & Vlogs</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Tabletop Games</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Video Games</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Web Series & TV Shows</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Writing & Publishing</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Photography</NavLink><br/>
               </div>
               <div className={styles.col22}>
-                    <NavLink to='/' className={styles.customlink}>Audio</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Camera Gear</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Education</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Energy and Tech</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Fashion & Wearbles</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Art</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Comics</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Dance & Theater</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Film</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Music</NavLink><br/>
                       
               </div>
               </div>
               <div className={styles.row3}>
                   <p className={styles.row3p}>COMMUNITY PROJECTS</p>
-                  <NavLink to='/' className={styles.customlink}>Audio</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Camera Gear</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Education</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Energy and Tech</NavLink><br/>
-                    <NavLink to='/' className={styles.customlink}>Fashion & Wearbles</NavLink><br/>
-             
+                  <NavLink to='/' className={styles.customlink}>Culture</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Environment</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Human Rights</NavLink><br/>
+                    <NavLink to='/' className={styles.customlink}>Local Businessesness</NavLink><br/>
               </div>
           </div>
         </div>
