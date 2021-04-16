@@ -31,9 +31,8 @@ This is the project we started as a four memeber team  during [Constructor week]
 Within the download you'll find the following directories and files:
 
 ```
-Himalaya
-
 Indiegogo
+|
 │   README.md 
 │
 └───Component
