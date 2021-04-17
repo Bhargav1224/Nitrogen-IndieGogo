@@ -9,6 +9,7 @@ import { Camp } from "../Components/CampAProject";
 import { Basics } from "../Components/BasicsDonation";
 import { ExploreCards } from "../Components/ExploreCards/ExploreCards";
 import { PrivateRoute } from "./PrivateRoute";
+import { EachCard } from "../Components/EachCard/EachCard";
 
 export const Routes = () => {
   return (
@@ -36,6 +37,9 @@ export const Routes = () => {
         <PrivateRoute path="/campaigns/basics">
           <Basics />
         </PrivateRoute>
+        <Route path="/campaign/:id">
+          <EachCard />
+        </Route>
         <Route>
           <h1>Error 404! Page Not Found</h1>
         </Route>
