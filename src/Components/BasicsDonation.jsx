@@ -1,52 +1,53 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import  axios from 'axios'
+import axios from "axios";
 const Select = styled.select`
-width:50%;
-height:50px;
-padding:8px;
+  width: 50%;
+  height: 50px;
+  padding: 8px;
 `;
 const Nav = styled.div`
   top: 7%;
   background-color: #ececec;
   width: 100%;
-  height:50px;
-  padding:10px;
+  height: 50px;
+  padding: 10px;
 `;
-const MainDiv=styled.div`
-width:70%;
-margin:auto;
-`
-const Input=styled.input`
-margin-left:60%;
-background-color:#6d7bf3;
-color:white;
-width:30%;
-height:30px;
-font-size:18px;
-border:none;
-`
-const Inp=styled.input`
-width:60%;
-height:40px;
-padding:8px;
-`
-const initial={
-  title:'',
-  imageUrl:'https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/eknfkaaa27hubowbb7zg',
-  descrition:'',
-  raisedAmount:'',
-  category:'',
-  percentage:'',
-  days:''
-}
+const MainDiv = styled.div`
+  width: 70%;
+  margin: auto;
+`;
+const Input = styled.input`
+  margin-left: 60%;
+  background-color: #6d7bf3;
+  color: white;
+  width: 30%;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+`;
+const Inp = styled.input`
+  width: 60%;
+  height: 40px;
+  padding: 8px;
+`;
+const initial = {
+  title: "",
+  imageUrl:
+    "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/eknfkaaa27hubowbb7zg",
+  descrition: "",
+  raisedAmount: "",
+  category: "",
+  percentage: "",
+  days: "",
+};
 export const Basics = () => {
   const uploadedImage = React.useRef(null);
   const imageUploader = React.useRef(null);
-  const [query,setQuery]=React.useState(initial)
-  const [list,setList]=React.useState([])
-  const {title,descrition,imageUrl,raisedAmount,category,percentage,days}=query
+  const [query, setQuery] = React.useState(initial);
+  const [list, setList] = React.useState([]);
+  const { title, descrition, imageUrl, raisedAmount, category, percentage, days } = query;
 
   const handleImageUpload = (e) => {
     const [file] = e.target.files;
@@ -61,69 +62,96 @@ export const Basics = () => {
     }
   };
 
-  const handleSubmit=(e)=>{
-       e.preventDefault();
-       const payload={
-        id:percentage,
-        title,
-        imageUrl,
-         descrition,
-         raisedAmount,
-         percentage,
-         days
-      }
-  
-      const update=[...list,payload]
-      setList(update)
-     axios.post('https://mymock-server-shubham00.herokuapp.com/campaign',parseInt(query))
-     .then((res)=>{
-       console.log(res)
-     })
-     .catch((err)=>{
-      console.log(err)
-     })
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const payload = {
+      id: percentage,
+      title,
+      imageUrl,
+      descrition,
+      raisedAmount,
+      percentage,
+      days,
+      category,
+    };
 
-  const handleChange=(e)=>{
-     const {name,value}=e.target
-     setQuery({...query,[name]:value})
-  }
+    const update = [...list, payload];
+    setList(update);
+    axios
+      .post("https://mymock-server-shubham00.herokuapp.com/campaign", {
+        title: title,
+        imageUrl: imageUrl,
+        descrition: descrition,
+        raisedAmount: raisedAmount,
+        percentage: percentage,
+        days: days,
+        category: category,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setQuery({ ...query, [name]: value });
+  };
+  console.log(query);
   return (
     <MainDiv>
-        <Nav>
-            <h2>Campaigns/Basics</h2>
-        </Nav>
-      <h3>Basics</h3><br/>
+      <Nav>
+        <h2>Campaigns/Basics</h2>
+      </Nav>
+      <h3>Basics</h3>
+      <br />
       <span>
-        Make a good first impression: introduce your campaign objectives and
-        entice people to learn more. This basic information will represent your
-        campaign on your campaign page, on your campaign card, and in searches.
-      </span><br/><br/>
+        Make a good first impression: introduce your campaign objectives and entice people to learn more. This basic
+        information will represent your campaign on your campaign page, on your campaign card, and in searches.
+      </span>
+      <br />
+      <br />
       <form onSubmit={handleSubmit}>
         <div>
-          <label><h3>Campaigning title</h3></label>
+          <label>
+            <h3>Campaigning title</h3>
+          </label>
           <br />
           <span>What is the title of your campaign</span>
-          <br /><br/>
-          <Inp type="text" placeholder="My Campaign Title" value={title} name="title" onChange={handleChange} />
-          <br /><br/>
-        </div>
-        <div>
-          <label><h3>Campaign Description</h3></label>
           <br />
-          <span>
-            Provide a short description that best describes your campaign to
-            your audience.
-          </span>
-          <br /><br/>
-          <input type="text-area" value={descrition} name="descrition" onChange={handleChange} style={{width:"20vw",height:"5vw"}}/>
-          <br /><br/>
+          <br />
+          <Inp type="text" placeholder="My Campaign Title" value={title} name="title" onChange={handleChange} />
+          <br />
+          <br />
         </div>
         <div>
-          <label><h3>Campaign Card Image</h3></label>
+          <label>
+            <h3>Campaign Description</h3>
+          </label>
+          <br />
+          <span>Provide a short description that best describes your campaign to your audience.</span>
+          <br />
+          <br />
+          <input
+            type="text-area"
+            value={descrition}
+            name="descrition"
+            onChange={handleChange}
+            style={{ width: "20vw", height: "5vw" }}
+          />
+          <br />
+          <br />
+        </div>
+        <div>
+          <label>
+            <h3>Campaign Card Image</h3>
+          </label>
           <br />
           <span>Upload a square image that represents your campaign.</span>
-          <br /><br/>
+          <br />
+          <br />
           <div
             style={{
               display: "flex",
@@ -149,7 +177,7 @@ export const Basics = () => {
               }}
               onClick={() => imageUploader.current.click()}
             >
-              <img 
+              <img
                 ref={uploadedImage}
                 style={{
                   width: "100%",
@@ -161,56 +189,67 @@ export const Basics = () => {
 
           <br />
         </div>
-        <div><br/>
-          <label><h3>Raise Fund</h3></label>
+        <div>
+          <br />
+          <label>
+            <h3>Raise Fund</h3>
+          </label>
           <br />
           <span>
-            Choose the location where you are running the campaign. This
-            location will be visible on your campaign page for your audience to
-            see.
+            Choose the location where you are running the campaign. This location will be visible on your campaign page
+            for your audience to see.
           </span>
-          <br /><br/>
+          <br />
+          <br />
           <Inp type="text" placeholder="Raise Fund" value={raisedAmount} name="raisedAmount" onChange={handleChange} />
           <br />
-        </div><br/>
+        </div>
+        <br />
         <div>
-          <label><h3>Category</h3></label>
+          <label>
+            <h3>Category</h3>
+          </label>
           <br />
-          <span>
-            To help backers find your campaign, select a category that best
-            represents your project.
-          </span>
-          <br /><br/>
-          <Select value={category} name="category" onChange={handleChange} >
-            <option>Audio</option>
-            <option>Camera Gear</option>
-            <option>Education</option>
-            <option>Energy and GreenTech</option>
-            <option>Art</option>
-            <option>Comics</option>
-            <option>Music</option>
-            <option>Culture</option>
-            <option>Environment</option>
-            <option>Human Rights</option>
+          <span>To help backers find your campaign, select a category that best represents your project.</span>
+          <br />
+          <br />
+          <Select value={category} name="category" onChange={handleChange}>
+            <option value="AUDIO">Audio</option>
+            <option value="CAMERA GEAR">Camera Gear</option>
+            <option value="EDUCATION">Education</option>
+            <option value="ENERGY">Energy and GreenTech</option>
+            <option value="ART">Art</option>
+            <option value="COMICS">Comics</option>
+            <option value="MUSIC">Music</option>
+            <option value="CULTURE">Culture</option>
+            <option value="ENVIRONMENT">Environment</option>
+            <option value="HUMAN">Human Rights</option>
           </Select>
         </div>
-        <div><br/>
-          <label><h3>Percentage</h3></label>
+        <div>
+          <br />
+          <label>
+            <h3>Percentage</h3>
+          </label>
           <br />
           <input type="text" value={percentage} name="percentage" onChange={handleChange} />
           <br />
         </div>
-        <div><br/>
-          <label><h3>Campaign Duration</h3></label>
+        <div>
+          <br />
+          <label>
+            <h3>Campaign Duration</h3>
+          </label>
           <br />
           <span>
-            How many days will you be running your campaign for? You can run a
-            campaign for any number of days, with a 60 day duration maximum.
+            How many days will you be running your campaign for? You can run a campaign for any number of days, with a
+            60 day duration maximum.
           </span>
           <br />
           <input type="text-area" value={days} name="days" onChange={handleChange} />
           <br />
-        </div><br/>
+        </div>
+        <br />
         <Input type="submit" value="SAVE AND CONTINUE" />
       </form>
     </MainDiv>
