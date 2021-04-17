@@ -11,8 +11,9 @@ export const EachCard = () => {
   const [follow, setFollow] = React.useState(false);
   const [modalOn, setModalOn] = React.useState(false);
   const [payment, setPayment] = React.useState(false);
-
+  const [amount, setAmount] = React.useState("");
   const { id } = useParams();
+
   React.useEffect(() => {
     getIndividualTask();
   }, []);
@@ -21,10 +22,19 @@ export const EachCard = () => {
       setData(response.data);
     });
   };
-  const { title, category, descrition, percentage, days, imageUrl, raisedAmount } = data;
-  //   if (payment) {
-  //     <Redirect to={"/"} />;
-  //   }
+  let { title, category, descrition, percentage, days, imageUrl, raisedAmount } = data;
+
+  const postRaisedAmount = () => {
+    raisedAmount = Number(raisedAmount) + Number(amount);
+    axios
+      .patch(`https://mymock-server-shubham00.herokuapp.com/campaign/${id}`, {
+        raisedAmount: raisedAmount,
+      })
+      .then((response) => {
+        setData(response.data);
+      });
+    setModalOn(false);
+  };
   console.log(payment);
   return (
     <>
@@ -74,8 +84,8 @@ export const EachCard = () => {
               <p>Make a contribution</p>
             </LabelCont>
             <InpCont>
-              <input type="text" placeholder="$" />
-              <button onClick={() => setPayment(!payment)}>Continue</button>
+              <input type="text" placeholder="$" value={amount} onChange={(e) => setAmount(e.target.value)} />
+              <button onClick={() => postRaisedAmount()}>Continue</button>
             </InpCont>
           </Modal>
         )}
