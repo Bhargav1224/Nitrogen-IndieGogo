@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import  axios from 'axios'
 const Select = styled.select`
 width:50%;
 height:50px;
@@ -32,10 +32,21 @@ width:60%;
 height:40px;
 padding:8px;
 `
-
+const initial={
+  title:'',
+  imageUrl:'https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/eknfkaaa27hubowbb7zg',
+  descrition:'',
+  raisedAmount:'',
+  category:'',
+  percentage:'',
+  days:''
+}
 export const Basics = () => {
   const uploadedImage = React.useRef(null);
   const imageUploader = React.useRef(null);
+  const [query,setQuery]=React.useState(initial)
+  const [list,setList]=React.useState([])
+  const {title,descrition,imageUrl,raisedAmount,category,percentage,days}=query
 
   const handleImageUpload = (e) => {
     const [file] = e.target.files;
@@ -49,6 +60,34 @@ export const Basics = () => {
       reader.readAsDataURL(file);
     }
   };
+
+  const handleSubmit=(e)=>{
+       e.preventDefault();
+       const payload={
+        id:percentage,
+        title,
+        imageUrl,
+         descrition,
+         raisedAmount,
+         percentage,
+         days
+      }
+  
+      const update=[...list,payload]
+      setList(update)
+     axios.post('https://mymock-server-shubham00.herokuapp.com/campaign',parseInt(query))
+     .then((res)=>{
+       console.log(res)
+     })
+     .catch((err)=>{
+      console.log(err)
+     })
+  }
+
+  const handleChange=(e)=>{
+     const {name,value}=e.target
+     setQuery({...query,[name]:value})
+  }
   return (
     <MainDiv>
         <Nav>
@@ -60,24 +99,24 @@ export const Basics = () => {
         entice people to learn more. This basic information will represent your
         campaign on your campaign page, on your campaign card, and in searches.
       </span><br/><br/>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label><h3>Campaigning title</h3></label>
           <br />
           <span>What is the title of your campaign</span>
           <br /><br/>
-          <Inp type="text" placeholder="My Campaign Title" />
+          <Inp type="text" placeholder="My Campaign Title" value={title} name="title" onChange={handleChange} />
           <br /><br/>
         </div>
         <div>
-          <label><h3>Campaign Tagline</h3></label>
+          <label><h3>Campaign Description</h3></label>
           <br />
           <span>
             Provide a short description that best describes your campaign to
             your audience.
           </span>
           <br /><br/>
-          <input type="text-area" style={{width:"20vw",height:"5vw"}}/>
+          <input type="text-area" value={descrition} name="descrition" onChange={handleChange} style={{width:"20vw",height:"5vw"}}/>
           <br /><br/>
         </div>
         <div>
@@ -110,7 +149,7 @@ export const Basics = () => {
               }}
               onClick={() => imageUploader.current.click()}
             >
-              <img
+              <img 
                 ref={uploadedImage}
                 style={{
                   width: "100%",
@@ -123,7 +162,7 @@ export const Basics = () => {
           <br />
         </div>
         <div><br/>
-          <label><h3>Location</h3></label>
+          <label><h3>Raise Fund</h3></label>
           <br />
           <span>
             Choose the location where you are running the campaign. This
@@ -131,7 +170,7 @@ export const Basics = () => {
             see.
           </span>
           <br /><br/>
-          <Inp type="text" placeholder="Country" />
+          <Inp type="text" placeholder="Raise Fund" value={raisedAmount} name="raisedAmount" onChange={handleChange} />
           <br />
         </div><br/>
         <div>
@@ -142,7 +181,7 @@ export const Basics = () => {
             represents your project.
           </span>
           <br /><br/>
-          <Select>
+          <Select value={category} name="category" onChange={handleChange} >
             <option>Audio</option>
             <option>Camera Gear</option>
             <option>Education</option>
@@ -156,20 +195,9 @@ export const Basics = () => {
           </Select>
         </div>
         <div><br/>
-          <label><h3>Tags</h3></label>
+          <label><h3>Percentage</h3></label>
           <br />
-          <span>
-            Enter up to five keywords that best describe your campaign. These
-            tags will help with organization and discoverability.
-          </span>
-          <br />
-          <Select>
-            <option value="3d">3d</option>
-            <option value="3d printers">3d printers</option>
-            <option value="air purifiers">Air purifiers</option>
-            <option value="Album">Album</option>
-            <option value="Animation">Animation</option>
-          </Select>
+          <input type="text" value={percentage} name="percentage" onChange={handleChange} />
           <br />
         </div>
         <div><br/>
@@ -180,7 +208,7 @@ export const Basics = () => {
             campaign for any number of days, with a 60 day duration maximum.
           </span>
           <br />
-          <input type="text-area" />
+          <input type="text-area" value={days} name="days" onChange={handleChange} />
           <br />
         </div><br/>
         <Input type="submit" value="SAVE AND CONTINUE" />
