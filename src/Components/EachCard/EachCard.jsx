@@ -87,7 +87,6 @@ export const EachCard = () => {
 const MainCont = styled.div`
   width: 80%;
   height: 500px;
-  border: 1px solid black;
   margin: auto;
   margin-top: 60px;
   display: flex;
@@ -96,7 +95,6 @@ const MainCont = styled.div`
 const ImageCont = styled.div`
   width: 53%;
   height: 100%;
-  border: 1px solid black;
   & > img {
     width: 100%;
     height: 100%;
@@ -106,7 +104,6 @@ const ImageCont = styled.div`
 const TextCont = styled.div`
   width: 45%;
   height: 100%;
-  border: 1px solid black;
   & > h1 {
     margin: 10px 0;
   }
