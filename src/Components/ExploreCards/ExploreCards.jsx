@@ -24,7 +24,7 @@ export const ExploreCards = () => {
   const handleSelectFund = (e) => {
     const value = e.target.value;
     setCategory(value);
-    if (value == "mostfunding") {
+    if (value === "mostfunding") {
       axios.get(`https://mymock-server-shubham00.herokuapp.com/campaign?_sort=percentage&_order=DESC`).then((res) => {
         return setArticles(res.data);
       });
@@ -44,7 +44,7 @@ export const ExploreCards = () => {
 
   useEffect(() => {
     mockapi().then((res) => {
-      console.log(res);
+      // console.log(res);
       setArticles(res.data);
     });
   }, []);

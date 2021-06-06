@@ -6,10 +6,10 @@ export const Reviews = () => {
 		<>
 			<div>
 				<h1 className={styles.reviewheading}>From the Indiegogo Review</h1>
-				<h4 className={styles.crowddescription}>
+				<p className={styles.crowddescription}>
 					Your behind-the-scenes view of the people and stories behind Indiegogo
 					projects
-				</h4>
+				</p>
 			</div>
 			<div className={styles.reviewbox}>
 				<div className={styles.revirewcontentbox}>
@@ -73,9 +73,11 @@ export const Reviews = () => {
 					/>
 				</div>
 				<div>
+					<br />
 					<h1 className={styles.curiousthings}>
 						Clever Things For Curious Humans™
 					</h1>
+					<br />
 					<p className={styles.curiouscontent}>
 						There is no better place to start the hunt for something new and{" "}
 						<br />
@@ -84,10 +86,10 @@ export const Reviews = () => {
 						that solve everyday problems large and small...!
 					</p>
 				</div>
-			</div>
-			<div className={styles.buttonsforlearn}>
-				<button>SIGNUP NOW</button>
-				<button>LERAN MORE</button>
+				<div className={styles.buttonsforlearn}>
+					<button className={styles.footerbtns1}>SIGN UP NOW</button>
+					<button className={styles.footerbtns2}>LERAN MORE</button>
+				</div>
 			</div>
 		</>
 	);
