@@ -34,16 +34,7 @@
   color: #000000;
   padding-right: 25px;
 }
-.navitemright1::after {
-  content: "";
-  background-color: #000000;
-  position: absolute;
-  width: 2px;
-  height: 30px;
-  top: 10px;
-  right: 170px;
-  display: block;
-}
+
 .navitemleft:hover {
   color: #E51075;
 }
