@@ -7,7 +7,7 @@ const axios = Axios.create({
 	},
 });
 export const getArticles = (page, limit = 4) => {
-    console.log(page,limit)
+    // console.log(page,limit)
 	return axios.get("/campaign", {
 		params: {
 			_page:page,

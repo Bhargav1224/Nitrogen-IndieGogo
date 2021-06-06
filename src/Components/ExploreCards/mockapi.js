@@ -7,7 +7,7 @@ const axios = Axios.create({
 	},
 });
 export const mockapi = ( limit = 12) => {
-    console.log(limit)
+    // console.log(limit)
 	return axios.get("/campaign", {
 		params: {
 			// _sort=percentage&_order=DESC
