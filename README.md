@@ -45,7 +45,9 @@ Indiegogo
 |   |   HomeSlideShow
 |   |   ImageSlider
 |   |   Enterprenuers
-|   |   Campaign     ...
+|   |   Campaign 
+|   |   What we do
+    ...
 |              
 |    
 └───Redux
