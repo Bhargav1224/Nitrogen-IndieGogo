@@ -1,14 +1,12 @@
 .maincontainer {
 	background-color: #f5f5f5;
 }
-.container{
-    color:#62727b;
-    display: flex;
-    column-gap: 100px;
-    justify-content: space-evenly;
-    padding-top: 50px;
-
-
+.container {
+	color: #62727b;
+	display: flex;
+	column-gap: 100px;
+	justify-content: space-evenly;
+	padding-top: 50px;
 }
 .col1 {
 	width: 60%;
@@ -26,14 +24,14 @@
 	list-style-type: none;
 }
 
-.p1{
-    margin-top: 20px;
-    font-size: 18px;
-    margin-bottom: 25px;
+.p1 {
+	margin-top: 20px;
+	font-size: 18px;
+	margin-bottom: 25px;
 }
-.li1{
-    margin-bottom: 15px;
-
+.li1 {
+	margin-bottom: 15px;
+}
 
 .col2 {
 	margin-right: 100px;
@@ -42,54 +40,57 @@
 	text-align: center;
 }
 
-.logo{
-    margin-top: 20px;
-    font-size: 35px;
-    margin-bottom: 20px;
+.logo {
+	margin-top: 20px;
+	font-size: 35px;
+	margin-bottom: 20px;
 }
 
-.p2{
-    color:#000000;
-    font-weight:bold;
-    font-size: 14px;
-    margin-bottom: 15px;
+.p2 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
 }
 
-.p3{
-    width:300px;
-    margin-left: 35px;
-    font-size: 14px;
-    margin-bottom: 20px;
+.p3 {
+	width: 300px;
+	margin-left: 35px;
+	font-size: 14px;
+	margin-bottom: 20px;
 }
-.inputemail{
-    text-align: center;
-    height: 40px;
-    width: 90%;
-    margin-bottom: 10px;
-}
-
-.inputsubmit{
-    font-size: 14px;
-    margin-top: 20px;
-    background-color: #e51075;;
-    padding:10px 130px;
-    margin-bottom: 100px;
-    font-weight:600px;
-}
-.inputcheck{
-    margin-right: 5px;
-   
-    padding-top: 20px;
+.inputemail {
+	text-align: center;
+	height: 40px;
+	width: 90%;
+	margin-bottom: 10px;
 }
 
-.subcontainer{
-    text-align: center;
-    width: 60%;
-    margin-top: 20px;
-    margin-left: 250px;
-    padding-bottom: 50px;
-    
+.inputsubmit {
+	font-size: 14px;
+	margin-top: 20px;
+	background-color: #e51075;
+	margin-bottom: 100px;
+	color: white;
+	width: 300px;
+	border: 1px solid gray;
+	cursor: pointer;
+	border-radius: 5px;
+	height: 40px;
+	font-weight: 600px;
+}
+.inputcheck {
+	margin-right: 5px;
 
+	padding-top: 20px;
+}
+
+.subcontainer {
+	text-align: center;
+	width: 60%;
+	margin-top: 20px;
+	margin-left: 250px;
+	padding-bottom: 50px;
 }
 
 .hori {
