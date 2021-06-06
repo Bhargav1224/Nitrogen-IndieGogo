@@ -18,13 +18,15 @@ function SlideShow() {
 
 	useEffect(() => {
 		getArticles(page).then((res) => {
-			console.log(res);
+			// console.log(res);
 			setArticles(res.data);
 		});
 	}, [page]);
 	return (
 		<div>
-			<h1 style={{ color: "grey", marginLeft: "20px",marginTop:"40px" }}>Popular Projects</h1>
+			<h1 style={{ color: "grey", marginLeft: "5%", marginTop: "40px" }}>
+				Popular Projects
+			</h1>
 			<div
 				style={{
 					float: "right",
@@ -58,13 +60,14 @@ function SlideShow() {
 
 					gridGap: "20px",
 					width: "50%",
+					marginLeft: "3%",
 				}}
 			>
 				<ShowArticles articles={articles} />
-            </div>
-            <div>
-                <CollectionPage/>
-            </div>
+			</div>
+			<div>
+				<CollectionPage />
+			</div>
 		</div>
 	);
 }
