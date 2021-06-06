@@ -6,7 +6,8 @@
     display: flex;
     column-gap: 100px;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .col1{
     width: 60%;
@@ -26,11 +27,11 @@
 
 .p1{
     margin-top: 20px;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 .li1{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .col2{
@@ -43,14 +44,14 @@
 .logo{
     margin-top: 20px;
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .p2{
     color:#000000;
     font-weight:bold;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .p3{
@@ -61,28 +62,31 @@
 }
 .inputemail{
     text-align: center;
-    height: 30px;
+    height: 40px;
     width: 90%;
     margin-bottom: 10px;
 }
 
 .inputsubmit{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
     background-color: #e51075;;
     padding:10px 130px;
     margin-bottom: 100px;
-    font-weight: bold;
+    font-weight:600px;
 }
 .inputcheck{
     margin-right: 5px;
+   
+    padding-top: 20px;
 }
 
 .subcontainer{
     text-align: center;
     width: 60%;
     margin-top: 20px;
-    margin-left: 465px;
+    margin-left: 250px;
+    padding-bottom: 50px;
     
 }
 
