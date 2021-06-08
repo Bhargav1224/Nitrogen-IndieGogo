@@ -1,0 +1,244 @@
+.frontimg {
+	position: relative;
+	text-align: center;
+	color: black;
+	height: 400px;
+	width: 98%;
+}
+.frontimg > img {
+	height: 100%;
+	width: 100%;
+}
+.imgcontent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video {
+	width: 60%;
+	height: 200px;
+	margin: auto;
+	/* border: 1px solid grey; */
+	margin-top: 30px;
+}
+
+.wecontent {
+	line-height: 25px;
+	color: rgb(42, 42, 42);
+	text-align: center;
+	font-family: benton-sans, Helvetica, sans-serif;
+}
+
+.journybox {
+	width: 60%;
+	height: 500px;
+	/* border: 1px solid grey; */
+	margin: auto;
+}
+
+.aboutheading {
+	font-family: ff-more-web-pro, Georgia, Serif;
+
+	text-align: center;
+	font-size: 35px;
+}
+.journybox > div {
+	height: 100px;
+	width: 100%;
+	/* border: 1px solid grey; */
+	margin-top: 30px;
+}
+.journybox > div > img {
+	width: 100%;
+	height: 100px;
+}
+.wecontentbox {
+	height: 300px;
+	width: 100%;
+	/* border: 1px solid grey; */
+}
+.explorebtn {
+	width: 200px;
+
+	height: 40px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid rgb(229, 16, 117);
+	color: rgb(229, 16, 117);
+	margin-left: 35%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.explorebtn:hover {
+	background-color: rgb(229, 16, 117);
+	color: white;
+}
+
+/* subscribe ----css */
+.subscribebox {
+	width: 99%;
+	height: 300px;
+	/* border: 1px solid gray; */
+	margin: auto;
+	background-color: rgb(245, 245, 245);
+}
+.subinbtn {
+	width: 50%;
+	height: 60px;
+	/* border: 1px solid grey; */
+	margin: auto;
+	display: flex;
+}
+
+.subinput {
+	width: 63%;
+	height: 50px;
+	/* border: 1px solid grey; */
+	margin: auto;
+}
+::placeholder {
+	margin-left: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.subscribebtn {
+	width: 200px;
+	height: 50px;
+	color: white;
+	background-color: rgb(229, 16, 117);
+	border-radius: 5px;
+	border: 1px solid rgb(229, 16, 117);
+	cursor: pointer;
+	margin: auto;
+}
+.checkbox {
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+}
+u:hover {
+	color: red;
+	cursor: pointer;
+}
+
+/* left: 30px;
+rgba(53,202,151,0.2)
+    bottom: 30px;
+    width: 700px;
+    height: 740px;
+    background-image: url(https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_scale,h_740/v1/what_we_do/funding_hero_desktop_foreground.png);
+    transform: rotate(
+60deg
+); */
+
+.favcampaigns {
+	width: 80%;
+	height: fit-content;
+	/* border: 1px solid gray; */
+	margin: auto;
+}
+.wedoboxes {
+	height: 550px;
+	width: 45%;
+	margin: 20px;
+	/* border: 1px solid grey; */
+}
+
+.WhatwedoContainer {
+	height: 600px;
+	width: 95%;
+	margin: 20px;
+	display: flex;
+	/* border: 1px solid grey; */
+}
+.favimgbox {
+	height: 45%;
+	width: 80%;
+	margin: auto;
+	/* border: 1px solid grey; */
+}
+
+.favimgcontent {
+	height: 65%;
+	width: 100%;
+	margin: auto;
+	/* border: 1px solid grey; */
+}
+.favwecontent {
+	line-height: 27px;
+	color: rgb(42, 42, 42);
+	text-align: left;
+	font-family: benton-sans, Helvetica, sans-serif;
+}
+
+.favimgbox > img {
+	width: 100%;
+	height: 100%;
+}
+.wecontent2 {
+	line-height: 25px;
+	color: rgb(42, 42, 42);
+	text-align: center;
+	font-size: 25px;
+	margin-top: 20px;
+	font-family: benton-sans, Helvetica, sans-serif;
+}
+.wecontent3 {
+	line-height: 25px;
+	color: rgb(42, 42, 42);
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	font-family: benton-sans, Helvetica, sans-serif;
+}
+.readyexplore {
+	height: 400px;
+	width: 98%;
+	margin: auto;
+	/* border: 1px solid gray; */
+
+	display: flex;
+}
+.readybox {
+	height: 90%;
+	width: 90%;
+	/* border-left: 1px solid gray; */
+	margin: auto 20px;
+}
+.iconbox {
+	width: 150px;
+	height: 150px;
+	/* border: 1px solid grey; */
+	margin: auto;
+}
+.iconbox > img {
+	width: 100%;
+	height: 100%;
+}
+
+.insheading {
+	clear: both;
+	font-size: 16px;
+	text-align: center;
+	color: gray;
+}
+
+.explorebtn2 {
+	width: 260px;
+	font-family: benton-sans, Helvetica, sans-serif;
+
+	height: 40px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid rgb(229, 16, 117);
+	color: rgb(229, 16, 117);
+	margin-left: -35%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.explorebtn2:hover {
+	background-color: rgb(229, 16, 117);
+	color: white;
+}
