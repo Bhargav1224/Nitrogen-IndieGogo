@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import robo from "./../Images/robo.PNG";
+import robo from "../Images/robo.PNG";
 
 const Camdiv = styled.div`
   display: flex;

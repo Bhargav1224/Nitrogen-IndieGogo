@@ -49,7 +49,7 @@ export const Dropdown = () => {
       <div className={styles.drop2}>
         <div className={styles.row1}>
           <p className={styles.row1p}>
-            <NavLink to="/explorePage" className={styles.customlink}>
+            <NavLink to="/explorePage" className={styles.customlink1}>
               Tech And Innovation
             </NavLink>
           </p>
@@ -57,53 +57,53 @@ export const Dropdown = () => {
             <NavLink to="/" className={styles.customlink}>
               Audio
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Camera Gear
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Education
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Energy and Tech
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Fashion & Wearbles
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Food & Beverage
             </NavLink>
-            <br />
+            <br/><br/>
           </div>
           <div className={styles.col21}>
             <NavLink to="/" className={styles.customlink}>
               Health & Fitness
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Home
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Phones & Accessories
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Productivity
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Transportation
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Travel & Outdoors
             </NavLink>
-            <br />
+            <br/><br/>
           </div>
         </div>
         <div className={styles.row2}>
@@ -112,49 +112,49 @@ export const Dropdown = () => {
             <NavLink to="/" className={styles.customlink}>
               Podcasts, Blogs & Vlogs
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Tabletop Games
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Video Games
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Web Series & TV Shows
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Writing & Publishing
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Photography
             </NavLink>
-            <br />
+            <br/><br/>
           </div>
           <div className={styles.col22}>
             <NavLink to="/" className={styles.customlink}>
               Art
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Comics
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Dance & Theater
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Film
             </NavLink>
-            <br />
+            <br/><br/>
             <NavLink to="/" className={styles.customlink}>
               Music
             </NavLink>
-            <br />
+            <br/><br/>
           </div>
         </div>
         <div className={styles.row3}>
@@ -162,19 +162,19 @@ export const Dropdown = () => {
           <NavLink to="/" className={styles.customlink}>
             Culture
           </NavLink>
-          <br />
+          <br/><br/>
           <NavLink to="/" className={styles.customlink}>
             Environment
           </NavLink>
-          <br />
+          <br/><br/>
           <NavLink to="/" className={styles.customlink}>
             Human Rights
           </NavLink>
-          <br />
+          <br/><br/>
           <NavLink to="/" className={styles.customlink}>
             Local Businessesness
           </NavLink>
-          <br />
+          <br/><br/>
         </div>
       </div>
     </div>

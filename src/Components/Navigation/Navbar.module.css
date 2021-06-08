@@ -7,7 +7,6 @@
 .div1 {
   margin-left: 20px;
 }
-
 .div2 {
   margin-right: 15px;
 }
@@ -15,7 +14,7 @@
   font-weight: 1000;
   font-size: 22px;
   text-decoration: none;
-  color: #e51075;
+  color: #E51075;
 }
 .navitemleft {
   font-size: 17px;
@@ -29,7 +28,6 @@
   color: #000000;
   padding-right: 20px;
 }
-
 .navitemright1 {
   font-size: 17px;
   text-decoration: none;
@@ -37,26 +35,14 @@
   padding-right: 25px;
 }
 
-.navitemright1::after {
-  content: "";
-  background-color: #000000;
-  position: absolute;
-  width: 2px;
-  height: 30px;
-  top: 10px;
-  right: 170px;
-  display: block;
-}
 .navitemleft:hover {
-  color: #e51075;
+  color: #E51075;
 }
-
 .navitemright:hover {
-  color: #e51075;
+  color: #E51075;
 }
-
 .navitemright1:hover {
-  color: #e51075;
+  color: #E51075;
 }
 .search {
   color: #000000;
@@ -66,22 +52,21 @@
   width: 10px;
   height: 10px;
 }
-
 /*dropdown*/
-
 .drop1 {
   display: flex;
   justify-content: center;
   column-gap: 40px;
   width: 100%;
+  background-color: #fff;
 }
-
 .drop2 {
   display: flex;
   justify-content: center;
   column-gap: 100px;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
+  padding:0px 20px;
 }
 .img1 {
   width: 300px;
@@ -99,22 +84,22 @@
 .img5 {
   width: 140px;
 }
-
 .p21 {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 .row1 {
   display: flex;
   column-gap: 30px;
+  margin-top: 30px;
 }
 .row2 {
   display: flex;
   column-gap: 30px;
+  margin-top: 30px;
 }
-
 .row1p {
   position: absolute;
   margin-top: 15px;
@@ -126,7 +111,6 @@
 .col21 {
   margin-top: 50px;
 }
-
 .row2p {
   height: 20px;
   margin-top: 15px;
@@ -138,12 +122,18 @@
 .col22 {
   margin-top: 50px;
 }
-
 .row3p {
-  margin-top: 15px;
+  margin-top: 44px;
+  margin-bottom: 20px;
 }
 .customlink {
   position: relative;
   color: #484848;
   text-decoration: none;
+}
+.customlink1 {
+  position: relative;
+  color: #484848;
+  text-decoration: none;
+  font-size:18px;
 }
