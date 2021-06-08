@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 const Select = styled.select`
   width: 50%;
@@ -34,8 +34,7 @@ const Inp = styled.input`
 `;
 const initial = {
   title: "",
-  imageUrl:
-    "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/eknfkaaa27hubowbb7zg",
+  imageUrl: "https://webobjects2.cdw.com/is/image/CDW/6325292?$product-main$",
   descrition: "",
   raisedAmount: "",
   category: "",
@@ -48,6 +47,7 @@ export const Basics = () => {
   const [query, setQuery] = React.useState(initial);
   const [list, setList] = React.useState([]);
   const { title, descrition, imageUrl, raisedAmount, category, percentage, days } = query;
+  const history = useHistory();
 
   const handleImageUpload = (e) => {
     const [file] = e.target.files;
@@ -93,6 +93,7 @@ export const Basics = () => {
       .catch((err) => {
         console.log(err);
       });
+    history.push("/");
   };
 
   const handleChange = (e) => {
@@ -100,6 +101,7 @@ export const Basics = () => {
     setQuery({ ...query, [name]: value });
   };
   console.log(query);
+
   return (
     <MainDiv>
       <Nav>
