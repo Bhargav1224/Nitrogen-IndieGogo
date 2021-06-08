@@ -34,7 +34,7 @@ export const Navbar = () => {
           <NavLink to="/" className={styles.logo}>
             INDIEGOGO
           </NavLink>
-          <NavLink to="/" className={styles.navitemleft} style={{ paddingRight: "7px" }} onClick={handledrop}>
+          <NavLink to="#" className={styles.navitemleft} style={{ paddingRight: "7px" }} onClick={handledrop}>
             Explore {drop ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}
           </NavLink>
           <NavLink to="/about-what-we-do" className={styles.navitemleft}>
