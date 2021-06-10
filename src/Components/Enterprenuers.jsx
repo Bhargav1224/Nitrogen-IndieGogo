@@ -66,34 +66,49 @@ const Button = styled.button`
 `;
 
 const CampAcc = styled.div`
-  width: 70%;
+  width: 53%;
   display: grid;
-  gap: 20px;
   margin: auto;
-  height: 200px;
+  min-height: 200px;
   grid-template: "cp in";
   margin-bottom: 130px;
   
 `;
 const Camp = styled.div`
-  width: 80%;
+  width: 95%;
   grid-area: cp;
-  padding: 10px;
-  
-  
-`;
+  padding: 10px;  
+`
 const Indem = styled.div`
-  width: 80%;
+  width: 90%;
   grid-area: in;
   padding: 10px;
+  margin: auto;
   
   
 `;
 const Imgicon = styled.img`
-  height: 70px;
-  width: 90px;
+  width: auto;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   
 `;
+
+const Heading1=styled.h1`
+font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: benton-sans,Helvetica,Arial,"sans-serif";
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    `
 const Enterpreneur = styled.div`
   display: flex;
   justify-content: space-around;
@@ -104,20 +119,32 @@ const Enterpreneur = styled.div`
   margin-bottom: 40px;
 `;
 const EntData = styled.div`
-  width: 70%;
-  padding: 10px 20px;
+  width: 80%;
+  padding: 30px 50px;
   line-height: 20px;
+  margin-bottom: 30px;
 `;
 const FlexWorks = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: auto;
 `;
 const Flexdiv = styled.div`
-  box-shadow: 2px 2px 10px 1px black;
   width: 18%;
+  border: 1px solid #ddd;
+  padding: 30px 5px;
 `;
+
+const H212=styled.h1`
+font-size:27px;
+margin: 40px auto`
+
+const Imge=styled.img`
+width:auto;
+height: 60px;`
+
+
 const ButtonExp = styled.button`
   color: white;
   background-color: #a7124b;
@@ -155,41 +182,87 @@ const IndData = styled.div`
 const Flex2 = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  margin: 30px auto;
 `;
 const ImgBig = styled.img`
   width: 300px;
 `;
+const Para1 = styled.p`
+font-size: 16px;
+margin: 5px auto;
+ padding: 0px 10px;
+  min-height:130px ;
+  line-height: 1.7em;
+  font-weight: 500;
+  text-align: left;
+  font-family: benton-sans,Helvetica,Arial,"sans-serif";
+  color: #2a2a2a;
+  
+`;
+const Para5=styled.p`
+font-size: 20px;
+    margin-bottom: 1.5em;
+    text-align: center;
+    line-height: 1.7em;
+    font-family: benton-sans,Helvetica,Arial,"sans-serif";
+    margin: auto;
+    width: 48%;
+    margin-top:20px;
+    color: #2a2a2a;
+`
 const Flex3 = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin: 10px auto;
+  padding-top: 20px;
 `;
 const Div3 = styled.div`
-  width: 21%;
-`;
+  width: 32%;
+  font-size: 20px;
+  background-color: #f5f5f5;
+    color: #2a2a2a;
+`
+
+const H321=styled.h1`
+color:black;`
 const Div4 = styled.div`
-  width: 22%;
+  width: 33%;
   border: 1px solid grey;
+  margin: 13px;
 `;
 const Head1 = styled.h1`
-  color: hotpink;
+color: #eb1478;
+padding: 0px;
+margin: 15px 0px 0px 0px;
 `;
 const Head2 = styled.h2`
-  font-size: 26px;
-`;
-const Para1 = styled.p`
   font-size: 18px;
+  text-align: left;
+  padding: 10px;
 `;
+
 const Img3 = styled.img`
-  width: 30%;
+  width: 27%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.7em;
+  padding: 20px 7px 15px 10px;
+
 `;
 const Project = styled.div`
-  background-color: #fdf4f4;
-  padding: 10px;
-  margin-top: 30px;
+background-color: #f5f5f5;
+font-size: 16px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    min-height: 130px;
+    line-height: 22px;
+    font-weight: 500;
+    line-height: 2.5em;
+    font-family: "benton-sans", "Helvetica", "sans-serif";
+    color: #eb1478;
 `;
 const Spn = styled.span`
   font-size: 14px;
@@ -203,11 +276,6 @@ const Divvbar=styled.div`
 margin: 40px 10px;
 `
 
-const Paraa=styled.p`
-text-align:left;
-font-size:18px;
-font-weight: 700;
-margin:10px 5px;`
 
 const HH3=styled.h3`
 font-weight: 500;
@@ -216,25 +284,74 @@ font-weight: 500;
     margin-left: auto;
     margin-right: auto;
     font-family: benton-sans,Helvetica,"sans-serif";
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    
+`
+// decoration none
+const Spaan1= styled.div`
+text-align:left;
+text-decoration: none !important;
+color: #eb1478;
 `
 
 const SpanDiv=styled.span`
 margin-top:20px;
-padding:20px 0px;`
+padding:20px 0px;
+line-height:30px;
+`
+
+const Hrr=styled.hr`
+border-top: 1px solid #ddd;
+margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    box-sizing: content-box;
+    height: 0;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    line-height: 1.7em;
+    font-size: 16px;
+`
 
 const H22=styled.h2`
 margin:20px;`
 
+const Paraa=styled.p`
+text-decoration:none;`
+
 const Spaan=styled.span`
-align-items:left;`
+margin: 0 0 10px;
+display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align:left !important;
+    line-height: 1.7em; `
 
 const H23= styled.h2`
-margin:10px 0px;`
+font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    margin-top: 20px;
+    font-family: benton-sans,Helvetica,Arial,"sans-serif";
+`
 
 const H21= styled.h2`
 margin:30px;
 font-size:25px;`
+
+const Divlast=styled.div`
+margin: 30px auto;
+`
 
 
 export const Enterprenuers = () => {
@@ -328,42 +445,43 @@ export const Enterprenuers = () => {
         </Carousel>
       </Slider>
       <Divvbar>
-        <h1>Dream it. Fund it. Make it. Ship it.</h1>
-        <h1>We help at every step from concept to market.</h1>
+        <Heading1>Dream it. Fund it. Make it. Ship it.<br/>
+    We help at every step from concept to market.</Heading1>
       </Divvbar>
       <CampAcc>
         <Camp>
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-crowdfunding-80px@2x-e1515527153625.png" />
           <HH3>CROWDFUNDING</HH3>
           
-          <Paraa>Raise funds with a crowdfunding campaign</Paraa>
-          <Spaan>
+          <Spaan><strong>Raise funds with a crowdfunding campaign</strong><br/>
+          
             Acquire starter capital and validate your idea by tapping into Indiegogo’s global network of early adopters.
           </Spaan>
           <br />
           <br />
           <Link>
-            <span>START A CAMPAIGN ›</span>
+            <Spaan1>START A CAMPAIGN ›</Spaan1>
           </Link>
         </Camp>
         <Indem>
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/08/IGG_entrepreneur-site-indemand-50px@2x.png" />
          <HH3>INDEMAND</HH3>
           
-          <Paraa>Extend your campaign with InDemand</Paraa>
-          <Spaan>
+          <Spaan><strong>Extend your campaign with InDemand</strong><br/>
+          
             After your crowdfunding campaign, continue raising money and building your community with InDemand. No
             fundraising target, no deadline limits.
           </Spaan>
           <br />
           <br />
           <Link>
-            <span>ACCESS INDEMAND ›</span>
+          {/* decoration none */}
+            <Spaan1 style={{textDecoration:"none"}}>ACCESS INDEMAND ›</Spaan1>
           </Link>
         </Indem>
       </CampAcc>
       <Enterpreneur>
-        <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" />
+        <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" style={{width:"250px",height:"200px"}} />
         <EntData>
           <H22>Entrepreneur Services</H22>
           <span>
@@ -373,39 +491,41 @@ export const Enterprenuers = () => {
           </span>
         </EntData>
       </Enterpreneur>
+      <H212>All the Right Experts to Help Your Business</H212>
       <FlexWorks>
         {" "}
         <Flexdiv>
           <Link>
-            <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-creative-services-@2x.png" />
+            <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-creative-services-@2x.png" />
             <p>Create Services</p>
           </Link>
         </Flexdiv>
         <Flexdiv>
+         
           <Link>
             {" "}
-            <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-fulfillment-50px@2x.png" />
+            <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-fulfillment-50px@2x.png" />
             <p>Fulfillment</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
           <Link>
-            <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-marketing-50px@2x.png" />
+            <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-marketing-50px@2x.png" />
             <p>Marketing and Communication</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
           <Link>
             {" "}
-            <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-prototyping-and-production-@2x.png" />
+            <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-prototyping-and-production-@2x.png" />
             <p>Prototyping and Production</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
           <Link>
             {" "}
-            <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-retail-licensing-distribution-50x50-@2x.png" />
-            <p>Retail,Licensing and Distribution</p>
+            <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-retail-licensing-distribution-50x50-@2x.png" />
+            <Paraa>Retail,Licensing and Distribution</Paraa>
           </Link>
         </Flexdiv>
       </FlexWorks>
@@ -420,14 +540,15 @@ export const Enterprenuers = () => {
         <Button>READ THE GUIDE</Button>
       </DivGuide>
       <IndChina>
-        <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" />
+        <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" style={{width:"270px"}} />
         <IndData>
           <H23>Indiegogo China: Your Fast Track to the Global Market</H23>
-          <SpanDiv>We’re here to help China’s top innovative products launch in U.S. and Western markets.
+          <SpanDiv>We’re here to help China’s top innovative products launch in U.S. and Western markets.<br/>
          In the past two years alone, products from China have raised nearly $100 million on Indiegogo. Our team
             offers unparalleled support and resources to help you with the challenges of cross-border crowdfunding.
           </SpanDiv>
-          <hr />
+          <br/>
+          <Hrr />
           <Link>
             <Spn>LEARN MORE ABOUT INDIEGOGO CHINA SERVICES</Spn>
             <br />
@@ -440,33 +561,37 @@ export const Enterprenuers = () => {
       </IndChina>
 
       <H21>Success Stories</H21>
+      
       <Flex2>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/04/IGG_HowItWorks_SuccessStories_387x387px_nomaticbag.jpg" />
           <Para1>
             The NOMATIC travel bag is shipping their products worldwide to 7K backers after raising $3M in crowdfunding
             on Indiegogo.
-            <Link>Learn More</Link>
+            <Link style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/04/IGG_HowItWorks_SuccessStories_387x387px_hyperdrive2.jpg" />
           <Para1>
             HyperDrive Thunderbolt 3 USB-C Hub for MacBook Pro raised $1M+ on InDemand, by targeting outreach to grow a
-            loyal community of backers.<Link>Learn More</Link>
+            loyal community of backers.
+           
+            <Link style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HowItWorks_SuccessStories_387x387px_bullrest1.jpg" />
           <Para1>
             After raising $381K on Indiegogo, BullRest - the reinvented travel pillow - launched on Indiegogo Product
-            Marketplace with guaranteed shipping.<Link>Learn More</Link>
+            Marketplace with guaranteed shipping.
+            <Link style={{textDecoration:"none", color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
       </Flex2>
       <Project>
-        <h1>Project by project,</h1>
-        <h1>we're changing the way new ideas come to life.</h1>
+        <H321>Project by project,</H321>
+        <H321>we're changing the way new ideas come to life.</H321>
         <Flex3>
           <Div3>
             <Head1>1B+</Head1>
@@ -486,11 +611,11 @@ export const Enterprenuers = () => {
           </Div3>
         </Flex3>
       </Project>
-      <div>
+      <Divlast>
         <h1>Ready to Go?</h1>
-        <p>
+        <Para5>
           You're only a step away from kicking off your entrepreneurial adventure on Indiegogo. Here's where to go next:
-        </p>
+        </Para5>
         <Flex3>
           <Div4>
             <Img3 src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-crowdfunding-80px@2x-e1515527153625.png" />
@@ -518,7 +643,7 @@ export const Enterprenuers = () => {
             <Para1>Learn about the benefits of choosing Indiegogo for your idea. See our detailed breakdown.</Para1>
           </Div4>
         </Flex3>
-      </div>
+      </Divlast>
       <Footer />
     </Maindiv>
   );
