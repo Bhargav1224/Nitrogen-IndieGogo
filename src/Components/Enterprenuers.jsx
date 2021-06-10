@@ -73,22 +73,26 @@ const CampAcc = styled.div`
   height: 200px;
   grid-template: "cp in";
   margin-bottom: 130px;
+  
 `;
 const Camp = styled.div`
-  width: 95%;
+  width: 80%;
   grid-area: cp;
   padding: 10px;
-  border: 1px solid grey;
+  
+  
 `;
 const Indem = styled.div`
-  width: 95%;
+  width: 80%;
   grid-area: in;
   padding: 10px;
-  border: 1px solid grey;
+  
+  
 `;
 const Imgicon = styled.img`
   height: 70px;
   width: 90px;
+  
 `;
 const Enterpreneur = styled.div`
   display: flex;
@@ -101,6 +105,8 @@ const Enterpreneur = styled.div`
 `;
 const EntData = styled.div`
   width: 70%;
+  padding: 10px 20px;
+  line-height: 20px;
 `;
 const FlexWorks = styled.div`
   display: flex;
@@ -123,8 +129,9 @@ const ButtonExp = styled.button`
 `;
 const DivGuide = styled.div`
   background-color: #4e4e4e;
-  padding: 15px 10px;
-  margin: 10px;
+  padding: 25px 20px 20px 20px;
+  line-height: 35px;
+  margin: 20px;
   color: white;
 `;
 const H5 = styled.div`
@@ -137,12 +144,13 @@ const IndChina = styled.div`
   margin: auto;
   margin-top: 80px;
   background-color: #f7f3f3;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 40px;
 `;
 const IndData = styled.div`
-  width: 50%;
+  width: 70%;
   text-align: left;
+  padding: 10px;
 `;
 const Flex2 = styled.div`
   display: flex;
@@ -186,8 +194,49 @@ const Project = styled.div`
 const Spn = styled.span`
   font-size: 14px;
   color: #fa7288;
+  padding: 15px 0px;
+  margin-top: 20px;
   text-decoration: none;
 `;
+
+const Divvbar=styled.div`
+margin: 40px 10px;
+`
+
+const Paraa=styled.p`
+text-align:left;
+font-size:18px;
+font-weight: 700;
+margin:10px 5px;`
+
+const HH3=styled.h3`
+font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: benton-sans,Helvetica,"sans-serif";
+    margin-bottom: 25px;
+`
+
+const SpanDiv=styled.span`
+margin-top:20px;
+padding:20px 0px;`
+
+const H22=styled.h2`
+margin:20px;`
+
+const Spaan=styled.span`
+align-items:left;`
+
+const H23= styled.h2`
+margin:10px 0px;`
+
+const H21= styled.h2`
+margin:30px;
+font-size:25px;`
+
+
 export const Enterprenuers = () => {
   return (
     <Maindiv>
@@ -278,17 +327,19 @@ export const Enterprenuers = () => {
           </Slide>
         </Carousel>
       </Slider>
-      <div>
+      <Divvbar>
         <h1>Dream it. Fund it. Make it. Ship it.</h1>
         <h1>We help at every step from concept to market.</h1>
-      </div>
+      </Divvbar>
       <CampAcc>
         <Camp>
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_HIW-crowdfunding-80px@2x-e1515527153625.png" />
-          <h2>Raise funds with a crowdfunding campaign</h2>
-          <span>
+          <HH3>CROWDFUNDING</HH3>
+          
+          <Paraa>Raise funds with a crowdfunding campaign</Paraa>
+          <Spaan>
             Acquire starter capital and validate your idea by tapping into Indiegogo’s global network of early adopters.
-          </span>
+          </Spaan>
           <br />
           <br />
           <Link>
@@ -297,11 +348,13 @@ export const Enterprenuers = () => {
         </Camp>
         <Indem>
           <Imgicon src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/08/IGG_entrepreneur-site-indemand-50px@2x.png" />
-          <h2>Extend your campaign with InDemand</h2>
-          <span>
+         <HH3>INDEMAND</HH3>
+          
+          <Paraa>Extend your campaign with InDemand</Paraa>
+          <Spaan>
             After your crowdfunding campaign, continue raising money and building your community with InDemand. No
             fundraising target, no deadline limits.
-          </span>
+          </Spaan>
           <br />
           <br />
           <Link>
@@ -312,7 +365,7 @@ export const Enterprenuers = () => {
       <Enterpreneur>
         <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" />
         <EntData>
-          <h2>Entrepreneur Services</h2>
+          <H22>Entrepreneur Services</H22>
           <span>
             From concept to market, Indiegogo Entrepreneur Services is here to help. More than a crowdfunding platform,
             Indiegogo offers services and resources from key partners to empower entrepreneurs throughout the life of
@@ -369,12 +422,11 @@ export const Enterprenuers = () => {
       <IndChina>
         <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" />
         <IndData>
-          <h2>Indiegogo China: Your Fast Track to the Global Market</h2>
-          <span>We’re here to help China’s top innovative products launch in U.S. and Western markets.</span>
-          <span>
-            In the past two years alone, products from China have raised nearly $100 million on Indiegogo. Our team
+          <H23>Indiegogo China: Your Fast Track to the Global Market</H23>
+          <SpanDiv>We’re here to help China’s top innovative products launch in U.S. and Western markets.
+         In the past two years alone, products from China have raised nearly $100 million on Indiegogo. Our team
             offers unparalleled support and resources to help you with the challenges of cross-border crowdfunding.
-          </span>
+          </SpanDiv>
           <hr />
           <Link>
             <Spn>LEARN MORE ABOUT INDIEGOGO CHINA SERVICES</Spn>
@@ -386,7 +438,8 @@ export const Enterprenuers = () => {
           </Link>
         </IndData>
       </IndChina>
-      <h1>Success Stories</h1>
+
+      <H21>Success Stories</H21>
       <Flex2>
         <div>
           <ImgBig src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/04/IGG_HowItWorks_SuccessStories_387x387px_nomaticbag.jpg" />
