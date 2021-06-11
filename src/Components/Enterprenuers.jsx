@@ -138,7 +138,7 @@ const Flexdiv = styled.div`
 
 const H212=styled.h1`
 font-size:27px;
-margin: 40px auto`
+margin: 40px auto;`
 
 const Imge=styled.img`
 width:auto;
@@ -459,7 +459,7 @@ export const Enterprenuers = () => {
           </Spaan>
           <br />
           <br />
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             <Spaan1>START A CAMPAIGN ›</Spaan1>
           </Link>
         </Camp>
@@ -474,7 +474,7 @@ export const Enterprenuers = () => {
           </Spaan>
           <br />
           <br />
-          <Link>
+          <Link style={{textDecoration:"none"}}>
           {/* decoration none */}
             <Spaan1 style={{textDecoration:"none"}}>ACCESS INDEMAND ›</Spaan1>
           </Link>
@@ -495,34 +495,34 @@ export const Enterprenuers = () => {
       <FlexWorks>
         {" "}
         <Flexdiv>
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-creative-services-@2x.png" />
             <p>Create Services</p>
           </Link>
         </Flexdiv>
         <Flexdiv>
          
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-fulfillment-50px@2x.png" />
             <p>Fulfillment</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-marketing-50px@2x.png" />
             <p>Marketing and Communication</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link>
+          <Link style={{textDecoration:"none"}} >
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-prototyping-and-production-@2x.png" />
             <p>Prototyping and Production</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-retail-licensing-distribution-50x50-@2x.png" />
             <Paraa>Retail,Licensing and Distribution</Paraa>
@@ -549,12 +549,12 @@ export const Enterprenuers = () => {
           </SpanDiv>
           <br/>
           <Hrr />
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             <Spn>LEARN MORE ABOUT INDIEGOGO CHINA SERVICES</Spn>
             <br />
             <br />
           </Link>
-          <Link>
+          <Link style={{textDecoration:"none"}}>
             <Spn>我對 INDIEGOGO CHINA 有兴趣，了解更多</Spn>
           </Link>
         </IndData>
