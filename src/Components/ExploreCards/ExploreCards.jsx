@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import { mockapi } from "./mockapi";
 import styles from "./ExploreCards.module.css";
-import axios from "axios";
 import { ShowExploreCards } from "./ShowExploreCards";
 import { Sidebar } from "../Sidebar/Sidebar1";
 import { Footer } from "../Footer/Footer";
 export const ExploreCards = () => {
   const [articles, setArticles] = useState([]);
+  // eslint-disable-next-line
   const [category, setCategory] = useState("");
   const [query, setQuery] = useState("");
 
@@ -14,10 +16,12 @@ export const ExploreCards = () => {
     {
       label: "Trending",
       value: "trending",
+      id:1,
     },
     {
       label: "MostFunding",
       value: "mostfunding",
+      id:2
     },
   ];
 
@@ -74,7 +78,7 @@ export const ExploreCards = () => {
         <label>Sort By </label>
         <select onChange={handleSelectFund}>
           {options.map((option) => (
-            <option value={option.value}>{option.label}</option>
+            <option key={option.id} value={option.value}>{option.label}</option>
           ))}
         </select>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import { getArticles } from "./SlideApi";
 import styles from "./SlideShow.module.css";
-
 import { ShowArticles } from "./ShowArticles";
 import { CollectionPage } from "./CollectionPage";
 

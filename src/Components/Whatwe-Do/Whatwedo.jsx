@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import { Footer } from "../Footer/Footer";
 
+import { Footer } from "../Footer/Footer";
 import styles from "./Whatwedo.module.css";
 
 export const Whatwedo = () => {

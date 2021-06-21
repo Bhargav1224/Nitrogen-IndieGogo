@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
 import robo from "../Images/robo.PNG";
 
 const Camdiv = styled.div`
@@ -75,7 +76,7 @@ export const Campaign = () => {
             />
           </Camdiv2>
         </Link>
-        <Link style={{textDecoration:"none"}}>
+        <Link to="" style={{textDecoration:"none"}}>
           {" "}
           <Camdiv2>
             <h2>A cause</h2>

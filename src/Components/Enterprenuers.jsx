@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
+
 import { Footer } from "./Footer/Footer";
 
 const Maindiv = styled.div`
@@ -459,7 +460,7 @@ export const Enterprenuers = () => {
           </Spaan>
           <br />
           <br />
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             <Spaan1>START A CAMPAIGN ›</Spaan1>
           </Link>
         </Camp>
@@ -474,13 +475,14 @@ export const Enterprenuers = () => {
           </Spaan>
           <br />
           <br />
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
           {/* decoration none */}
             <Spaan1 style={{textDecoration:"none"}}>ACCESS INDEMAND ›</Spaan1>
           </Link>
         </Indem>
       </CampAcc>
       <Enterpreneur>
+      {/* eslint-disable-next-line */}
         <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" style={{width:"250px",height:"200px"}} />
         <EntData>
           <H22>Entrepreneur Services</H22>
@@ -495,34 +497,34 @@ export const Enterprenuers = () => {
       <FlexWorks>
         {" "}
         <Flexdiv>
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-creative-services-@2x.png" />
             <p>Create Services</p>
           </Link>
         </Flexdiv>
         <Flexdiv>
          
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-fulfillment-50px@2x.png" />
             <p>Fulfillment</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_entrepreneur-site-marketing-50px@2x.png" />
             <p>Marketing and Communication</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link style={{textDecoration:"none"}} >
+          <Link  to="" style={{textDecoration:"none"}} >
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-prototyping-and-production-@2x.png" />
             <p>Prototyping and Production</p>
           </Link>
         </Flexdiv>{" "}
         <Flexdiv>
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             {" "}
             <Imge src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2017/07/IGG_experts-directory-retail-licensing-distribution-50x50-@2x.png" />
             <Paraa>Retail,Licensing and Distribution</Paraa>
@@ -540,6 +542,7 @@ export const Enterprenuers = () => {
         <Button>READ THE GUIDE</Button>
       </DivGuide>
       <IndChina>
+      {/* eslint-disable-next-line */}
         <img src="https://entrepreneur.indiegogo.com/how-it-works/wp-content/uploads/sites/5/2018/01/T2-IGG_Entrepreneur-services.png" style={{width:"270px"}} />
         <IndData>
           <H23>Indiegogo China: Your Fast Track to the Global Market</H23>
@@ -549,12 +552,12 @@ export const Enterprenuers = () => {
           </SpanDiv>
           <br/>
           <Hrr />
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             <Spn>LEARN MORE ABOUT INDIEGOGO CHINA SERVICES</Spn>
             <br />
             <br />
           </Link>
-          <Link style={{textDecoration:"none"}}>
+          <Link  to="" style={{textDecoration:"none"}}>
             <Spn>我對 INDIEGOGO CHINA 有兴趣，了解更多</Spn>
           </Link>
         </IndData>
@@ -568,7 +571,7 @@ export const Enterprenuers = () => {
           <Para1>
             The NOMATIC travel bag is shipping their products worldwide to 7K backers after raising $3M in crowdfunding
             on Indiegogo.
-            <Link style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
+            <Link  to="" style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
         <div>
@@ -577,7 +580,7 @@ export const Enterprenuers = () => {
             HyperDrive Thunderbolt 3 USB-C Hub for MacBook Pro raised $1M+ on InDemand, by targeting outreach to grow a
             loyal community of backers.
            
-            <Link style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
+            <Link  to="" style={{textDecoration:"none",color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
         <div>
@@ -585,7 +588,7 @@ export const Enterprenuers = () => {
           <Para1>
             After raising $381K on Indiegogo, BullRest - the reinvented travel pillow - launched on Indiegogo Product
             Marketplace with guaranteed shipping.
-            <Link style={{textDecoration:"none", color:"#eb1478"}}>Learn More</Link>
+            <Link  to="" style={{textDecoration:"none", color:"#eb1478"}}>Learn More</Link>
           </Para1>
         </div>
       </Flex2>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { Redirect } from "react-router-dom";
 import styled from "styled-components";
+
 import styles from "./AuthPage.module.css";
 import { fire } from "../Firebase/fire";
-import { Redirect } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+// eslint-disable-next-line
 import { loginSuccess } from "../../Redux/auth/authAction";
 import { Footer } from "../Footer/Footer";
 
@@ -52,7 +54,7 @@ export const AuthPage = () => {
       if (user) {
         clearInputs();
         setUser(user);
-        console.log(user);
+        // console.log(user);
       } else {
         setUser("");
       }
@@ -73,11 +75,12 @@ export const AuthPage = () => {
       dispatch(loginSuccess(payload));
     }
   }
-  console.log(userName);
+  // console.log(userName);
   useEffect(() => {
     authListener();
+    // eslint-disable-next-line
   }, []);
-  console.log(user);
+  // console.log(user);
   return (
     <>
       {user ? (
