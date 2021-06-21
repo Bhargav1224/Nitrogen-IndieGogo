@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import robo from "../Images/robo.PNG";
 import { Link } from "react-router-dom";
+
 const MainDiv = styled.div`
   width: 50%;
   margin: auto;

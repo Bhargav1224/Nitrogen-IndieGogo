@@ -1,15 +1,24 @@
 import React from "react";
-import { Reviews } from "./Reviews";
 import styles from "./SlideShow.module.css";
+import { useHistory } from "react-router-dom";
+
+import { Reviews } from "./Reviews";
 
 export const CrowdFunding = () => {
+	const history = useHistory();
+	const handleSignup = () => {
+		history.push("/login");
+	};
+
 	return (
 		<>
 			<div>
 				<br />
 				<br />
 				<br />
+				{/* eslint-disable-next-line */}
 				<div className={styles.crowdfunding}>
+					{/* eslint-disable-next-line */}
 					<img
 						src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/crowdfunding-bg-mobile-lg.jpg"
 						alt="crowdfunding image"
@@ -47,7 +56,7 @@ export const CrowdFunding = () => {
 				</p>
 			</div>
 			<div className={styles.interestbtn}>
-				<button>SIGNUP AND SELECT YOUR INTEREST</button>
+				<button onClick={handleSignup}>SIGNUP AND SELECT YOUR INTEREST</button>
 			</div>
 			<div>
 				<p className={styles.topcategories}>Or explore our top categories</p>

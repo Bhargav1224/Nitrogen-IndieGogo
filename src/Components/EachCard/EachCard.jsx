@@ -1,27 +1,32 @@
 import React from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import styled from "styled-components";
 import Modal from "react-modal";
 import { Redirect } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import styled from "styled-components";
+
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Footer } from "../Footer/Footer";
+
 export const EachCard = () => {
   const [data, setData] = React.useState([]);
   const [follow, setFollow] = React.useState(false);
   const [modalOn, setModalOn] = React.useState(false);
+  // eslint-disable-next-line
   const [payment, setPayment] = React.useState(false);
   const [amount, setAmount] = React.useState("");
   const { id } = useParams();
 
   React.useEffect(() => {
     getIndividualTask();
+    // eslint-disable-next-line
   }, []);
   const getIndividualTask = () => {
     axios.get(`https://mymock-server-shubham00.herokuapp.com/campaign/${id}`).then((response) => {
       setData(response.data);
     });
   };
+  // eslint-disable-next-line
   let { title, category, descrition, percentage, days, imageUrl, raisedAmount } = data;
 
   const postRaisedAmount = () => {
@@ -35,11 +40,12 @@ export const EachCard = () => {
       });
     setModalOn(false);
   };
-  console.log(payment);
+  // console.log(payment);
   return (
     <>
       <MainCont>
         <ImageCont>
+        {/* eslint-disable-next-line */}
           <img src={imageUrl} alt="Image" />
         </ImageCont>
         <TextCont>

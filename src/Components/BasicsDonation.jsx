@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+
 const Select = styled.select`
   width: 50%;
   height: 50px;
@@ -179,6 +180,7 @@ export const Basics = () => {
               }}
               onClick={() => imageUploader.current.click()}
             >
+              {/*  eslint-disable-next-line */}
               <img
                 ref={uploadedImage}
                 style={{

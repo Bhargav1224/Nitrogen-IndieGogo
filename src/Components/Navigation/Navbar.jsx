@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./Navbar.module.css";
+import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "./Navbar.module.css";
 import { Dropdown } from "./Dropdown";
-import { useSelector, useDispatch } from "react-redux";
 import { logoutSuccess } from "../../Redux/auth/authAction";
 import { fire } from "../Firebase/fire";
 

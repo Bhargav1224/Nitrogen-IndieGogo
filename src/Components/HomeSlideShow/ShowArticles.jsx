@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./SlideShow.module.css";
 import { Link } from "react-router-dom";
+
+import styles from "./SlideShow.module.css";
 
 export const ShowArticles = ({ articles }) => {
   return (
