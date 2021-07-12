@@ -2,7 +2,7 @@
 
 ![build](https://img.shields.io/travis/USER/REPO.svg) ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  
 <!--- ![Product Presentation Image](public/cover.png) --> 
-This is the project we started as a four memeber team  during [Constructor week](https://www.indiegogo.com/about/what-we-do). We are trying to build as same as the website is and  still this project is in continuous upgradation and soon will be launched under custom domain .
+This is the project we started as a four memeber team  during [Constructor week](https://www.indiegogo.com/about/what-we-do). We are trying to build as same as the website is and  still this project is in continuous upgradation and soon will be launched under custom domain , for demo click on this link [Live Demo](https://indiegogo.vercel.app/).
 # Table of Contents
 
 * [Installation](#installation)
