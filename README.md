@@ -71,7 +71,8 @@ Indiegogo
 ## Glimpse of our work!
 
 
-![Landing Page](https://user-images.githubusercontent.com/34106521/114999094-2adcfd00-9ebf-11eb-9011-d92724f2abb7.png)
+![indiegogo](https://user-images.githubusercontent.com/77038785/132513780-4eeac5e8-04f9-4cee-8181-943e624817c1.PNG)
+
 
 ![Enter Page](https://user-images.githubusercontent.com/34106521/114999507-8c04d080-9ebf-11eb-9911-19282cd8a91d.png)
 
